@@ -1,0 +1,136 @@
+.services-container {
+    padding: 140px 0px;
+    background-color: #FFFFFF80;
+    position: relative;
+    padding-right: 169px;
+    height: 610px;
+}
+.services-box {
+    height: 888px;
+    width: 75%;
+    background-color: #25A0A014;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.services-icon1 {
+    width: 173px;
+    height: 189px;
+    position: absolute;
+    top: 2px;
+    left: 505px;
+}
+.services-icon2 {
+    width: 202px;
+    height: 222px;
+    position: absolute;
+    top: 482px;
+    left: 147px;
+}
+.services-icon3 {
+    height: 227px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+}
+.services-section1 {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    position: relative;
+    padding-left: 170px;
+}
+.services-section1-text {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 70px;
+    max-width: 500px;
+    text-transform: capitalize;
+    color: #000000;
+}
+.services-section1-box-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.services-section1-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 146px;
+    width: 215px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 36px 0px;
+    transition: all 0.25s ease;
+}
+.services-section1-box:hover {
+    background-color: #25A0A0;
+}
+.services-sections-box-icon {
+    height: 40px;
+    width: 40px;
+    color: #25A0A0;
+    transition: all 0.25s ease;
+}
+.services-section1-box:hover .services-sections-box-icon {
+    color: #FFFFFF;
+}
+.services-section1-box-text {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    transition: 0.25s ease;
+    text-transform: capitalize;
+}
+.services-section1-box:hover .services-section1-box-text {
+    color: #FFFFFF;
+}
+.services-section2 {
+    position: absolute;
+    left: 457px;
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+.services-section1-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 146px;
+    width: 215px;
+    background-color: #25A0A0;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 36px 0px;
+    transition: background-color 0.25s ease;
+}
+.services-section1-box2:hover {
+    background-color: #FFFFFF;
+}
+.services-sections-box-icon2 {
+    height: 40px;
+    width: 40px;
+    color: #FFFFFF;
+    transition: color 0.25s ease;
+}
+.services-section1-box2:hover .services-sections-box-icon2 {
+    color: #25A0A0;
+}
+.services-section1-box-text2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    transition: color 0.25s ease;
+    text-transform: capitalize;
+}
+.services-section1-box2:hover .services-section1-box-text2 {
+    color: #000000;
+}

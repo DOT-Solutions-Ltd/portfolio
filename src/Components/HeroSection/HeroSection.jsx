@@ -2,6 +2,7 @@ import HeroIcon from "../../assets/hero-icon.png";
 import HeroProfilePic from "../../assets/hero-profile-pic.png";
 import HeroPic1 from "../../assets/hero-pic1.png";
 import HeroPic2 from "../../assets/hero-pic2.png";
+import HeroPic3 from "../../assets/hero-pic3.png";
 import { Icon } from "@iconify/react";
 import "./HeroSection.css"
 
@@ -44,6 +45,10 @@ const HeroSection = () => {
                 </div>
                 <div className="hs-bottom-section2">
                     <img src={HeroPic2} alt="hero-pic-2" className="hs-bottom-section2-top" />
+                    <div className="hs-bottom-section2-bottom">
+                        <h1 className="hs-bottom-section2-text">website design</h1>
+                        <img src={HeroPic3} alt="hero-pic" className="hs-bottom-section2-bottom-img" />
+                    </div>
                 </div>
             </div>
         </div>
