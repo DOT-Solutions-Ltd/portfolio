@@ -1,0 +1,104 @@
+.home-page-container {
+}
+.latest-projects-container {
+    margin-top: 81px;
+    background-color: #FFE5B1;
+    position: relative;
+    padding: 0px 170px ;
+    padding-top: 151px;
+    padding-bottom: 166px;
+}
+.lp-text-cont {
+    position: absolute;
+    top: 69.94px;
+    left: 160px;
+}
+.lp-text1 {
+    color: #25A0A0;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    transform: rotate(-10deg);
+}
+.lp-text2 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #000000;
+    padding-left: 33px;
+}
+.lp-samples-container {
+    display: flex;
+    gap: 63px;
+}
+.lp-sample1 {
+    padding-top: 40px;
+    border-top: 1px solid #000000;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-top: 214px;
+}
+.lp-sample2 {
+    padding-top: 40px;
+    border-top: 1px solid #000000;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin-top: 121px;
+}
+.lp-sample3 {
+    padding-top: 40px;
+    border-top: 1px solid #000000;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+.lp-sample1-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.lp-sample1-text {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #000000;
+    width: 282px;
+    margin: 0px;
+}
+.lp-sample1-icon-wrapper {
+    all: unset;
+    height: 53px;
+    width: 53px;
+    border-radius: 50px;
+    background-color: #25A0A0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.lp-sample1-img {
+    width: 378px;
+    height: 252px;
+}
+.tools-container {
+    height: 431px;
+    background-color: #25A0A01F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tools-text {
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    width: 809px;
+    text-transform: capitalize;
+    margin-bottom: 102px;
+}
+.tools-carousel {
+    display: flex;
+    align-items: center;
+}

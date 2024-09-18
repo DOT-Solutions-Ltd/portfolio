@@ -23,7 +23,11 @@ const Carousel = () => {
             </div>
             <div className="carousel-content">
                 <img src={CarouselIcon} alt="carousel-icon" className="carousel-icon" />
-                <h3 className="carousel-text">Production Scale Web-application</h3>
+                <h3 className="carousel-text">Production Scale Web-portals and platforms</h3>
+            </div>
+            <div className="carousel-content">
+                <img src={CarouselIcon} alt="carousel-icon" className="carousel-icon" />
+                <h3 className="carousel-text">E-commerce web and mobile applications</h3>
             </div>
         </Marquee>
     )
