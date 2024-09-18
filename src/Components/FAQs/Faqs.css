@@ -1,0 +1,26 @@
+.faq-container {
+    background-color: #E5F4F44D;
+    padding: 100px 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.faq-text1 {
+    margin: 0px;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 600;
+    color: #0000004D;
+    margin-bottom: 31px;
+}
+.faq-text2 {
+    margin: 0px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    color: #000000;
+}

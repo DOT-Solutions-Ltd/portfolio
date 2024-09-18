@@ -1,0 +1,22 @@
+.carousel-container {
+    display: flex;
+    align-items: center;
+    background-color: #25A0A0;
+    margin-top: 79px;
+}
+.carousel-content {
+    display: flex;
+    align-items: center;
+    gap: 21.78px;
+    margin-right: 21.78px;
+}
+.carousel-icon {
+    height: 19.8px;
+}
+.carousel-text {
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
