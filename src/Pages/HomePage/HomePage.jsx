@@ -8,6 +8,7 @@ import SampleImage2 from "../../assets/sample-image2.png";
 import SampleImage3 from "../../assets/sample-image3.png";
 import Teams from "../../Components/Teams/Teams";
 import Faqs from "../../Components/FAQs/Faqs";
+import ContactUs from "../../Components/ContactUs/ContactUs";
 import { Icon } from "@iconify/react";
 import Marquee from "react-fast-marquee";
 import "./HomePage.css"
@@ -92,6 +93,7 @@ const HomePage = () => {
                 </Marquee>
             </div>
             <Faqs />
+            <ContactUs />
         </div>
     )
 }

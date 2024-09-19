@@ -1,0 +1,91 @@
+.cu-container {
+    display: flex;
+    gap: 40px;
+}
+.cu-left-section {
+    padding: 95px 0px;
+    padding-left: 100px;
+}
+.cu-text1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    color: #000000;
+    margin: 0px;
+}
+.cu-text2 {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: capitalize;
+    margin: 0px;
+    margin-top: 22px;
+}
+.cu-form {
+    padding: 48px;
+    background-color: #25A0A00D;
+    margin-top: 25px;
+    border-radius: 20px;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+.cu-form-label {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.cu-input-wrapper {
+    margin-top: 12px;
+    margin-bottom: 33px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    border: 1px solid #0000004D;
+    padding: 29px 21px;
+    width: 493px;
+    border-radius: 15px;
+}
+.cu-input {
+    all: unset;
+    font-size: 20px;
+    width: 100%;
+}
+
+.cu-message-wrapper {
+}
+.cu-input2 {
+    outline: none;
+    background: none;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 33px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    border: 1px solid #0000004D;
+    padding: 29px 21px;
+    width: 493px;
+    border-radius: 15px;
+    color: #000000;
+    height: 197px;
+    resize: none;
+    scrollbar-width: none;
+}
+.cu-form-button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #25A0A0;
+    width: 100%;
+    color: #ffffff;
+    padding: 5px 0px;
+    font-size: 20px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+.cu-right-section-image {
+    width: 768px;
+  
+}

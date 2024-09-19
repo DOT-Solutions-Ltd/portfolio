@@ -24,3 +24,67 @@
     margin-bottom: 40px;
     color: #000000;
 }
+.faq-answers-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    margin-top: 40px;
+    
+}
+.faq-answers1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 666px;
+}
+.faq {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 19px;
+    border: 1px solid #00000033;
+    border-radius: 20px;
+    transition: border-color 0.35s ease;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.faq:hover {
+    border-color: #25A0A0;
+}
+.faq-selected {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 19px;
+    border-radius: 20px;
+    transition: border-color 0.35s ease;
+    cursor: pointer;
+    gap: 10px;
+    background-color: #25A0A0;
+}
+.faq-question {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000CC;
+    margin: 0px;
+    max-width: 506px;
+    font-weight: 500;
+}
+.faq-question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 10px;
+}
+.faq-icon {
+    font-size: 40px;
+    line-height: 40px;
+    color: #000000CC;
+    margin: 0px;
+}
+.faq-answers2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 666px;
+}
