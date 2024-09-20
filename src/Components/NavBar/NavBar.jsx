@@ -1,5 +1,6 @@
 import React from 'react'
 import { navLinks } from "../../data";
+import { Link } from "react-router-dom";
 import NavLogo from "../../assets/nav-logo.png";
 import './NavBar.css'
 
@@ -11,7 +12,9 @@ const NavBar = () => {
                 {
                     navLinks.map(({ pageName, path, id }) => {
                         return (
-                            <li key={id} className="nav-links">{pageName}</li>
+                            <Link style={{all: "unset"}}  to={path} key={id}>
+                                <li className="nav-links">{pageName}</li>
+                            </Link>
                         )
                     })
                 }
