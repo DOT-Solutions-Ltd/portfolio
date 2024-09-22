@@ -3,6 +3,7 @@ import HeroProfilePic from "../../assets/hero-profile-pic.png";
 import HeroPic1 from "../../assets/hero-pic1.png";
 import HeroPic2 from "../../assets/hero-pic2.png";
 import HeroPic3 from "../../assets/hero-pic3.png";
+import { Link } from "react-router-dom";
 import { Icon } from "@iconify/react";
 import "./HeroSection.css"
 
@@ -31,10 +32,10 @@ const HeroSection = () => {
                     <p className="hs-section3-text">business to business solutions, custom website, UI/UX Design, web development, mobile design and more...</p>
                 </div>
                 <div className="hs-section4">
-                    <button className="hs-section4-button">
+                    <Link to="/#contact-us" className="hs-section4-button">
                         <p className="hs-section4-button-text" >Hire Us</p>
                         <Icon icon="octicon:arrow-up-right-16" height={26} width={26} color="#FFFFFF" />
-                    </button>
+                    </Link>
                     <img src={HeroProfilePic} alt="profile-pic" className="hs-section4-image" />
                 </div>
             </div>

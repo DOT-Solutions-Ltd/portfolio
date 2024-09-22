@@ -1,10 +1,11 @@
 import { Icon } from "@iconify/react";
+import PropTypes from "prop-types";
 import {useState} from 'react'
 
 import ContactUsImage from "../../assets/contact-us.png";
 import "./ContactUs.css"
 
-const ContactUs = () => {
+const ContactUs = ({id = ""}) => {
     const [form, setForm] = useState({name: "", email: "", message: ""});
 
     const handleFormInput = (event) => {
@@ -20,7 +21,7 @@ const ContactUs = () => {
     };
 
     return (
-        <div className='cu-container' >
+        <div id={id} className='cu-container' >
             <div className="cu-left-section">
                 <h1 className="cu-text1">Contact Us</h1>
                 <p className="cu-text2">we are here to work with you! feel free to contact us, whether you have questions, feedback, inquiries or want to work with us, our team is ready to help.</p>
@@ -48,6 +49,10 @@ const ContactUs = () => {
             <img src={ContactUsImage} alt="cu-image" className="cu-right-section-image" />
         </div>
     )
+};
+
+ContactUs.propTypes = {
+    id: PropTypes.string
 }
 
 export default ContactUs

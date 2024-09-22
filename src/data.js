@@ -3,6 +3,16 @@ import TeamPic2 from "./assets/team-pic2.png";
 import TeamPic3 from "./assets/team-pic3.png";
 import TeamPic4 from "./assets/team-pic4.png";
 import TeamPic5 from "./assets/team-pic5.png";
+import Portfolio2 from "./assets/ow-image2.png";
+import Portfolio3 from "./assets/ow-image4.png";
+import Portfolio4 from "./assets/ow-image6.png";
+import Portfolio5 from "./assets/ow-image19.png";
+import Portfolio6 from "./assets/ow-image3.png";
+import Portfolio7 from "./assets/ow-image18.jpeg";
+import Portfolio8 from "./assets/ow-image20.webp";
+import Portfolio9 from "./assets/ow-image21.png";
+import Portfolio10 from "./assets/ow-image22.png";
+import Portfolio11 from "./assets/ow-image12.jpeg";
 export const navLinks = [
     {
         id: 1,
@@ -123,4 +133,164 @@ export const faqData2 = [
         isOpen: false,
         answer: "We empower enterprises by providing them with the latest digital tools and platforms that encourage creativity and innovation. Our solutions allow businesses to experiment with new ideas, automate tasks, and harness data analytics to make informed decisions, helping them stay ahead in a competitive market."
     }
+];
+
+export const portfolioData = [
+    {
+        id: 1,
+        image: Portfolio2,
+        title: "Blackcopper Website",
+        content: "The Official Website Of Blackcopper Services Limited, built with amazing user interface",
+        devTags: [
+            {tag: "Vue.js"},
+            {tag: "Tailwind CSS"},
+            {tag: "Sanity CMS"},
+            {tag: "Website"}
+        ],
+        projectLink: "https://blackcopper.io/",
+        sourceCode: "",
+        backgroundColor: "#2A69FC"
+    },
+    {
+        id: 2,
+        image: Portfolio3,
+        title: "Aiden Dashboard Web Application",
+        content: "In This admin dashboard for aiden Restaurant owners and administrators can efficiently oversee menu items, table configurations, user roles, schedules, and more, the dashboard offers a great platform for streamlined restaurant management.",
+        devTags: [
+            { tag: "React.js" },
+            { tag: "Redux" },
+            { tag: "ShardCN" },
+            { tag: "Tailwind CSS" },
+            { tag: "Tanstack Query" },
+            { tag: "Web Application"}
+        ],
+        projectLink: "https://aiden-web.vercel.app/",
+        sourceCode: "",
+        backgroundColor: "#00AB2E"
+    },
+    {
+        id: 3,
+        image: Portfolio4,
+        title: "Charterxe Website",
+        content: "The Official Website Of Charterxe brand of falconaero, built with amazing user interface",
+        devTags: [
+            { tag: "Next.js" },
+            { tag: "Tailwind CSS" },
+            { tag: "Framer Motion" },
+            { tag: "Website"}
+        ],
+        projectLink: "https://www.charterxe.com/en",
+        sourceCode: "",
+        backgroundColor: "#8F2A2C"
+    },
+    {
+        id: 4,
+        image: Portfolio5,
+        title: "Falconaero Canada Website",
+        content: "FalconAero Canada boasts a beautifully designed website showcasing subtle animations and stylish elements. Tailored for the Canadian market, the site effectively reflects FalconAero's brand identity.",
+        devTags: [
+            { tag: "Next.js" },
+            { tag: "Tailwind CSS" },
+            { tag: "ShardCN" },
+            { tag: "Framer Motion" },
+            { tag: "Website"}
+        ],
+        projectLink: "https://www.falconaero.ca/",
+        sourceCode: "",
+        backgroundColor: "#8E2A8F"
+    },
+    {
+        id: 5,
+        image: Portfolio6,
+        title: "Villaja E-commerce Mobile Application",
+        content: "A de-centralized marketplace featuring robust capabilities: escrow ordering system, seamless transactions via payment gateways, real-time order tracking, multi-store vendors, secure authentication, and intuitive dashboards for both users and administrators, chat systems plus many more features.",
+        devTags: [
+            { tag: "React Native" },
+            { tag: "Node.js" },
+            { tag: "MongoDB" },
+            { tag: "Paystack" },
+            { tag: "Context API" },
+            { tag: "Mobile Application"}
+        ],
+        projectLink: "",
+        sourceCode: "",
+        backgroundColor: "#FC5B2A"
+    },
+    {
+        id: 6,
+        image: Portfolio7,
+        title: "mylegalsoftware client mobile app.",
+        content: "The client mobile application for myls case management software where users can effectively manage their cases",
+        devTags: [
+            { tag: "React Native" },
+            { tag: "expo" },
+            { tag: "MongoDB" },
+            { tag: "Context API" },
+            { tag: "Mobile Application"}
+        ],
+        projectLink: "",
+        sourceCode: "",
+        backgroundColor: "#00AB2E"
+    },
+    {
+        id: 7,
+        image: Portfolio8,
+        title: "Zenfipay Services Website",
+        content: "The Official Website Of Zenfipay Service Limited, built with amazing user interface",
+        devTags: [
+            { tag: "Vue.js" },
+            { tag: "Tailwind CSS" },
+            { tag: "Contentful CMS" },
+            { tag: "Website"}
+        ],
+        projectLink: "https://website-v2-zeta.vercel.app/",
+        sourceCode: "",
+        backgroundColor: "#00ABA3"
+    },
+    {
+        id: 8,
+        image: Portfolio9,
+        title: "Next Nomad",
+        content: "An all-in-one workspace booking app with real-time availability, payment integration,, booking management, user profiles, workspace selection, reviews and ratings, and admin dashboards. Streamline your booking experience with these and many more features.",
+        devTags: [
+            { tag: "Next.js" },
+            { tag: "Prisma" },
+            { tag: "Tailwind CSS" },
+            { tag: "React Query" },
+            { tag: "Web Application"}
+        ],
+        projectLink: "https://nextnomad.vercel.app/",
+        sourceCode: "https://github.com/boluwatifeajayi/NextNomad",
+        backgroundColor: "#00AB2E"
+    },
+    {
+        id: 9,
+        image: Portfolio10,
+        title: "Instig Labs",
+        content: "The Official Website Of Instiglabs, built with amazing user interface",
+        devTags: [
+            { tag: "Next.js" },
+            { tag: "Sanity CMS" },
+            { tag: "Tailwind CSS" },
+            { tag: "Website"}
+        ],
+        projectLink: "https://www.instiglabs.io/",
+        sourceCode: "",
+        backgroundColor: "#00AB2E"
+    },
+    {
+        id: 10,
+        image: Portfolio11,
+        title: "Astra Mobile App",
+        content: "Astra is a mobile application for connecting tutors with student based on the courses they want to learn and particular learning styles they choose",
+        devTags: [
+            { tag: "React Native" },
+            { tag: "Expo" },
+            { tag: "Redux" },
+            { tag: "Mobile Application"}
+        ],
+        projectLink: "",
+        sourceCode: "https://github.com/boluwatifeajayi/astra-app",
+        backgroundColor: ""
+    },
 ]
