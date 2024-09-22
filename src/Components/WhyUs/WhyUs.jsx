@@ -24,7 +24,7 @@ const WhyUs = () => {
                     <div className="wu-section1-content-wrapper">
                         <img src={Wu1} alt="wu-img" className="wu-s-t-w-img" />
                         <div className="wu-s-c-t-w">
-                            <h1 className="wu-s-t-w-text1">we create innovative, creative but standardized software that leaves our clients both amazed & satisfied</h1>
+                            <h1 className="wu-s-t-w-text1">we develop innovative, creative and industry standard software that leaves our clients both amazed & satisfied</h1>
                             <div className="wu-s-c-b-w">
                                 <img src={Wu2} alt="wu-img" className="wu-s-c-b-w-img" />
                                 <p className="wu-s-c-b-w-text">Customer Review</p>

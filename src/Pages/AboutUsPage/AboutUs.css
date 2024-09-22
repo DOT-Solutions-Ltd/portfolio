@@ -1,0 +1,224 @@
+.about-us-container {
+    position: relative;
+}
+.au-section1 {
+    padding: 0px 170px;
+    padding-top: 170px;
+    padding-bottom: 75px;
+}
+.au-section1-background {
+    width: 70%;
+    height: 664px;
+    background-color: #25A0A014;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.au-section1-content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.au-section1-content1 {
+}
+.au-section1-content1-text1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0000004D;
+    margin: 0px;
+    margin-bottom: 31px;
+}
+.au-section1-content1-text2 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    text-transform: capitalize;
+    max-width: 700px;
+}
+.au-section1-content1-text3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #00000099;
+    max-width: 620px;
+    text-transform: capitalize;
+}
+.au-section1-content-image {
+    width: 586px;
+    height: 421px;
+}
+.au-section2 {
+    padding: 0px 170px;
+    padding-top: 127px;
+    background-color: #F7FCFC;
+}
+.au-section2-content1 {
+}
+.au-section2-content1-text1 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: capitalize;
+    max-width: 450px;
+    margin: 0px;
+    margin-bottom: 25px;
+    color: #000000;
+}
+.au-section2-content1-text2 {
+    margin: 0px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #00000080;
+    max-width: 900px;
+    margin-bottom: 75px;
+}
+.au-section2-content2 {
+    margin-top: 42px;
+    display: flex;
+    gap: 30px;
+}
+.au-section2-content2-image {
+    width: 734px;
+}
+.au-section2-content2-image2 {
+    width: 734px;
+}
+.au-section2-content2-text-wrapper {
+    padding: 111px 41px;
+    background-color: #25A0A00D;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 30px;
+}
+.au-section2-content2-text-wrapper2 {
+    padding: 90px 41px;
+    background-color: #25A0A00D;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 30px;
+}
+.au-section2-content2-text1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px;
+}
+.au-section2-content2-text2 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0px;
+    color: #00000080;
+}
+.au-section3 {
+    padding: 127px 170px;
+    padding-bottom: 149px;
+    display: flex;
+    gap: 51px;
+    background-color: #F7FCFC;
+}
+.au-section3-left {
+}
+.au-section3-left-text1 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 500;
+    margin: 0px;
+    margin-bottom: 25px;
+}
+.au-section3-left-text2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 74px;
+    max-width: 80%;
+    color: #00000080;
+}
+.au-section3-left-image {
+    width: 516px;
+}
+.au-section3-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px;
+}
+.au-section3-right-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 146px;
+    width: 215px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 36px 0px;
+    transition: all 0.25s ease;
+}
+.au-section3-right-box:hover {
+    background-color: #25A0A0;
+}
+.au-section3-right-box-icon {
+    height: 40px;
+    width: 40px;
+    color: #25A0A0;
+    transition: all 0.25s ease;
+}
+.au-section3-right-box:hover .au-section3-right-box-icon {
+    color: #FFFFFF;
+}
+.au-section3-right-box-text {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #000000;
+    text-align: center;
+    transition: 0.25s ease;
+    text-transform: capitalize;
+}
+.au-section3-right-box:hover .au-section3-right-box-text {
+    color: #FFFFFF;
+}
+.au-section3-right-box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 146px;
+    width: 215px;
+    background-color: #25A0A0;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 36px 0px;
+    transition: background-color 0.25s ease;
+}
+.au-section3-right-box2:hover {
+    background-color: #FFFFFF;
+}
+.au-section3-right-box-icon2 {
+    height: 40px;
+    width: 40px;
+    color: #FFFFFF;
+    transition: color 0.25s ease;
+}
+.au-section3-right-box2:hover .au-section3-right-box-icon2 {
+    color: #25A0A0;
+}
+.au-section3-right-box-text2 {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-align: center;
+    transition: color 0.25s ease;
+    text-transform: capitalize;
+}
+.au-section3-right-box2:hover .au-section3-right-box-text2 {
+    color: #000000;
+}

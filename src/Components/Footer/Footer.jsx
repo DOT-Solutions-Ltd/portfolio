@@ -1,10 +1,11 @@
 import { Icon } from "@iconify/react";
+import { Link } from "react-router-dom";
 import Logo from "../../assets/nav-logo.png";
 import "./Footer.css"
 
 const Footer = () => {
   return (
-    <div className='footer-container' >
+    <footer className='footer-container' >
         <div className="footer-top-section">
             <img src={Logo} alt="footer-logo" className="footer-logo" />
             <button className="footer-top-section-button">
@@ -14,10 +15,10 @@ const Footer = () => {
         </div>
         <div className="footer-bottom-section">
             <div className="fb-section">
-                <p className="fb-section-primary-text">Home</p>
-                <p className="fb-section-secondary-text">Our Services</p>
-                <p className="fb-section-secondary-text">Our Work</p>
-                <p className="fb-section-secondary-text">About Us</p>
+                <Link style={{all: "unset"}} to="/" ><p className="fb-section-primary-text">Home</p></Link>
+                <Link style={{all: "unset"}} to="/services" ><p className="fb-section-secondary-text">Our Services</p></Link>
+                <Link style={{all: "unset"}} to="/works" ><p className="fb-section-secondary-text">Our Work</p></Link>
+                <Link style={{all: "unset"}} to="/about" ><p className="fb-section-secondary-text">About Us</p></Link>
             </div>
             <div className="fb-section">
                 <p className="fb-section-primary-text">service</p>
@@ -66,7 +67,7 @@ const Footer = () => {
         <div className="footer-copyright">
             <p className="footer-copyright-text">&copy;2024 DOT Solutions, All Rights Reserved</p>
         </div>
-    </div>
+    </footer>
   )
 }
 
