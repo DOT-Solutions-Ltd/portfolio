@@ -17,7 +17,6 @@ import "./HomePage.css"
 const HomePage = () => {
     return (
         <div className="home-page-container" >
-            <NavBar />
             <HeroSection />
             <Carousel />
             <ServicesSection />
@@ -27,8 +26,8 @@ const HomePage = () => {
                     <p className="lp-text1">Project</p>
                     <h2 className="lp-text2" >Latest Projects</h2>
                 </div>
-                <Link to="/works" style={{all: "unset"}} >
-                    <Icon icon="octicon:arrow-up-right-16" height={108} width={108} color="#000000" style={{ position: "absolute", bottom: "31px", right: "253px", cursor: "pointer" }} />
+                <Link to="/works" style={{ all: "unset" }} >
+                    <Icon icon="octicon:arrow-up-right-16" height={108} width={108} color="#000000" className="arrow-up-right-16" />
                 </Link>
                 <div className="lp-samples-container">
                     <div className="lp-sample1">

@@ -222,3 +222,113 @@
 .au-section3-right-box2:hover .au-section3-right-box-text2 {
     color: #000000;
 }
+
+/**! MOBILE PHONE STYLES DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .au-section1 {
+        padding: 0px 20px;
+        padding-top: 135px;
+        padding-bottom: 90px;
+        background-color: #EEF7F7;
+    }
+    .au-section1-background {
+        display: none;
+    }
+    .au-section1-content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .au-section1-content1-text1 {
+        display: none;
+    }
+    .au-section1-content1 {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        align-items: center;
+        justify-content: center;
+    }
+    .au-section1-content1-text2 {
+        font-size: 25px;
+        line-height: 34.1px;
+        max-width: 335px;
+        text-align: center;
+        margin: 0px;
+    }
+    .au-section1-content1-text3 {
+        font-size: 10px;
+        line-height: 10px;
+        max-width: 335px;
+        margin: 0px;
+        text-align: center;
+    }
+    .au-section1-content-image {
+        width: 274px;
+        height: 199.4px;
+    }
+    .au-section2 {
+        padding: 32px 20px;
+    }
+    .au-section2-content1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+    }
+    .au-section2-content1-text1 {
+        font-size: 20px;
+        line-height: 20px;
+        max-width: 175px;
+        margin-bottom: 0px;
+        text-align: center;
+    }
+    .au-section2-content1-text2 {
+        font-size: 10px;
+        line-height: 10px;
+        max-width: 335px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .au-section2-content2 {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 37px;
+    }
+    .au-section2-content2-image {
+        order: 2;
+        width: 335px;
+    }
+    .au-section2-content2-text-wrapper {
+        order: 1;
+        padding: 73px 25px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 19.48px;
+    }
+    .au-section2-content2-text1 {
+        font-size: 25.97px;
+        line-height: 25.97px;
+        text-align: center;
+    }
+    .au-section2-content2-text2 {
+        font-size: 16.23px;
+        line-height: 16.23px;
+        max-width: 282.41px;
+        text-align: center;
+    }
+    .au-section2-content2-text-wrapper2 {
+        padding: 73px 25px;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 19.48px;
+    }
+    .au-section2-content2-image2 {
+        width: 335px;
+    }
+}

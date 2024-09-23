@@ -17,7 +17,9 @@ const HeroSection = () => {
                     <div className="hs-section1-box"></div>
                 </div>
                 <div className="hs-section2">
-                    <h1 className="hs-section2-text1">developing world-class digital solutions</h1>
+                    <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }} >
+                        <h1 className="hs-section2-text1">developing world-class digital solutions</h1>
+                    </div>
                     <div className="hs-section2-text2-wrapper">
                         <div className="h2-s2-t2-w1">
                             <h1 className="h2-s2-t2-w1-t">On-Time</h1>
@@ -34,7 +36,7 @@ const HeroSection = () => {
                 <div className="hs-section4">
                     <Link to="/#contact-us" className="hs-section4-button">
                         <p className="hs-section4-button-text" >Hire Us</p>
-                        <Icon icon="octicon:arrow-up-right-16" height={26} width={26} color="#FFFFFF" />
+                        <Icon icon="octicon:arrow-up-right-16" className="hs-section4-button-icon" color="#FFFFFF" />
                     </Link>
                     <img src={HeroProfilePic} alt="profile-pic" className="hs-section4-image" />
                 </div>

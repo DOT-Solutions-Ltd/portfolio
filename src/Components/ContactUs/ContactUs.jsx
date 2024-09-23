@@ -42,7 +42,7 @@ const ContactUs = ({id = ""}) => {
                     </div>
                     <button className="cu-form-button">
                         <p>Send Message</p>
-                        <Icon icon="iconamoon:arrow-right-1" width={25} height={25} color="#ffffff" />
+                        <Icon icon="iconamoon:arrow-right-1" className="cu-form-button-icon" color="#ffffff" />
                     </button>
                 </form>
             </div>

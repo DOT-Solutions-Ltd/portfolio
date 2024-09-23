@@ -20,3 +20,21 @@
     color: #FFFFFF;
     text-transform: capitalize;
 }
+
+/**! MOBILE PHONE STYLES DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .carousel-container {
+        margin-top: 34.81px;
+    }
+    .carousel-content {
+        gap: 11px;
+        margin-right: 11px;
+    }
+    .carousel-icon {
+        height: 10px;
+    }
+    .carousel-text {
+        font-size: 16.75px;
+        line-height: 16.75px;
+    }
+}

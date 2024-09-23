@@ -20,7 +20,7 @@
     left: 0px;
 }
 .hs-top-section {
-    padding: 192px 
+    padding: 192px;
 }
 .hs-section1 {
     display: flex;
@@ -146,6 +146,10 @@
     color: #FFFFFF;
     font-size: 18px;
 }
+.hs-section4-button-icon {
+    width: 26px;
+    height: 26px;
+}
 .hs-section4-image {
     width: 205px;
     height: 60px;
@@ -208,4 +212,114 @@
 }
 .hs-bottom-section2-bottom-img {
     width: 87%;
+}
+
+@media screen and (max-width:767px) {
+    .hero-icon {
+        width: 158.22px;
+        height: 147.83px;
+        position: absolute;
+        top: 50px;
+        left: 0px;
+    }
+    .hs-top-section {
+        all: unset;
+        padding: 0px 0px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .hs-section1-text {
+        font-size: 10.04px;
+        line-height: 10.04px;
+        margin: 0px;
+        margin-bottom: 3.22px;
+    }
+    .hs-section1-box {
+        width: 32.7px;
+        height: 4.29px;
+    }
+    .hs-section2 {
+        margin-top: 7.5px;
+        margin-bottom: 23px;
+        padding: 0px 30px;
+    }
+    .hs-section2-text1 {
+        all: unset;
+        font-size: 19.65px;
+        line-height: 34.06px;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-align: center;
+        color: #000000;
+    }
+    .hs-section2-text2-wrapper {
+        gap: 5px;
+    }
+    .h2-s2-t2-w1-t {
+        font-size: 19px;
+    }
+    .h2-s2-t2-w2 {
+        font-size: 26px;
+        color: #000000;
+    }
+    .h2-s2-t2-w3-t {
+        font-size: 19px;
+    }
+    .hs-section3 {
+        margin-bottom: 18px;
+    }
+    .hs-section3-text {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    .hs-section4-button {
+        padding: 3px 21px;
+        gap: 3.82px;
+    }
+    .hs-section4-button-text {
+        font-size: 10.65px;
+        line-height: 10.65px;
+        font-weight: 400;
+    }
+    .hs-section4-button-icon {
+        width: 10px;
+        height: 10px;
+    }
+    .hs-section4 {
+        gap: 21.41px;
+    }
+    .hs-section4-image {
+        width: 128.37px;
+        height: 38.94px;
+    }
+    .hs-bottom-section {
+        padding: 0px 20px;
+        gap: 15px;
+    }
+    .hs-bottom-section1 {
+        width: 305px;
+        height: 405px;
+    }
+    .hs-bottom-section1-text {
+        font-size: 35.64px;
+        line-height: 35.64px;
+    }
+    .hs-bottom-section1-img {
+        height: 336.5px;
+        top: 88px;
+    }
+    .hs-bottom-section2-top {
+        width: 335px;
+    }
+    .hs-bottom-section2-bottom {
+        width: 335px;
+        border-radius: 7.55px;
+    }
+    .hs-bottom-section2 {
+        gap: 15px;
+    }
+    .hs-bottom-section2-text {
+        font-size: 26.41px;
+        line-height: 26.41px;
+    }
 }
