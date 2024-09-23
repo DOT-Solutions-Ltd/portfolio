@@ -85,7 +85,72 @@
     border-radius: 100px;
     cursor: pointer;
 }
+.cu-form-button-icon {
+    width: 25px;
+    height: 25px;
+}
 .cu-right-section-image {
     width: 768px;
   
+}
+
+/**! MOBILE PHONE STYLES DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .cu-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .cu-left-section {
+        padding: 35px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cu-right-section-image {
+        display: none;
+    }
+    .cu-text1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .cu-text2 {
+        font-size: 10.09px;
+        line-height: 10.09px;
+        margin-top: 9px;
+        max-width: 335px;
+        text-align: center;
+    }
+    .cu-form {
+        padding: 23.34px;
+        border-radius: 9.72px;
+        width: 335px;
+    }
+    .cu-form-label {
+        font-size: 12.16px;
+        line-height: 12.16px;
+    }
+    .cu-input-wrapper {
+        padding: 14.1px 10px;
+        border-radius: 7.29px;
+        width: 93%;
+        gap: 8.27px;
+    }
+    .cu-input {
+        font-size: 12.72px;
+        line-height: 12.72px;
+    }
+    .cu-input2 {
+        width: 288.32px;
+        font-size: 12.72px;
+    }
+    .cu-form-button {
+        font-size: 9.72px;
+        border-radius: 48.62px;
+        gap: 4.86px;
+    }
+    .cu-form-button-icon {
+        width: 10.72px;
+        height: 10.72px;
+    }
 }

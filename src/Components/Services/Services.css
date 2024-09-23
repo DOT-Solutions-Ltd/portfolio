@@ -48,6 +48,9 @@
     text-transform: capitalize;
     color: #000000;
 }
+.services-section1-text2 {
+    display: none;
+}
 .services-section1-box-wrapper {
     display: flex;
     align-items: center;
@@ -133,4 +136,105 @@
 }
 .services-section1-box2:hover .services-section1-box-text2 {
     color: #000000;
+}
+
+/**! MOBILE PHONE STYLE DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .services-container {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 49px;
+        padding: 50px 20px;
+        background-color: #EEF7F7;
+    }
+    .services-box {
+        display: none;
+    }
+    .services-icon1 {
+        display: none;
+    }
+    .services-icon2 {
+        display: none;
+    }
+    .services-icon3 {
+        display: none;
+    }
+    .services-section1 {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 49px;
+    }
+    .services-section1-box-wrapper {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 12.57px;
+        height: 100%;
+    }
+    .services-section1-box {
+        all: unset;
+        width: 161px;
+        height: 145px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10.93px;
+        background-color: #FFFFFF;
+        border-radius: 20.93px;
+        box-shadow: 0px 2.19px 6.56px rgba(0, 0, 0, 0.1);
+    }
+    .services-section1-box-text {
+        font-size: 16.39px;
+        line-height: 16.39px;
+    }
+    .services-section1-text {
+        display: none;
+    }
+    .services-section1-text2 {
+        display: block;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        color: #000000;
+        text-transform: capitalize;
+        font-weight: 500;
+        max-width: 335px;
+    }
+    .services-sections-wrapper {
+        display: flex;
+        gap: 20px;
+    }
+    .services-section2 {
+        all: unset;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .services-section1-box2 {
+        all: unset;
+        width: 161px;
+        height: 145px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10.93px;
+        background-color: #25A0A0;
+        border-radius: 20.93px;
+        box-shadow: 0px 2.19px 6.56px rgba(0, 0, 0, 0.1);
+    }
+    .services-section1-box-text2 {
+        font-size: 16.39px;
+        line-height: 16.39px;
+    }
 }

@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import Portfolio1 from "../../assets/ow-image16.jpg";
 import Portfolio2 from "../../assets/ow-image11.png";
 import Portfolio3 from "../../assets/ow-image17.avif";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 import "./OurWork.css"
 
 const OurWork = () => {
@@ -12,34 +12,34 @@ const OurWork = () => {
       <div className="ow-section1">
         <h1 className="ow-section1-text1">Our Portfolio of Success Stories.</h1>
         <p className="ow-section1-text2">We work with clients in all sectors and of all sizes, from bootstrapped startups to Fortune</p>
-        <div style={{display: "flex", flexWrap: "wrap", alignItems: "center", gap: "140px", marginTop: "60px", justifyContent: "center"}} >
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "200px", height: "200px", border: "1px solid #ffffff", borderRadius: "100px", }} >
-            <p style={{fontSize: "50px", lineHeight: "50px", color: "#ffffff", fontWeight: "500", margin: "0px"}} >
+        <div className="ow-data-cont" >
+          <div className="ow-data-item" >
+            <p className="ow-data-item-text" >
               <span><CountUp end={5} /></span>
               <span>+</span>
             </p>
-            <p style={{fontSize: "18px", lineHeight: "18px", fontWeight: "400", margin: "0px", color: "#ffffff90"}} >Years of Experience</p>
+            <p className="ow-data-item-text2" >Years of Experience</p>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "200px", height: "200px", border: "1px solid #ffffff", borderRadius: "100px", }} >
-            <p style={{fontSize: "50px", lineHeight: "50px", color: "#ffffff", fontWeight: "500", margin: "0px"}} >
-            <span><CountUp end={35} duration={5} /></span>
-            <span>+</span>
+          <div className="ow-data-item" >
+            <p className="ow-data-item-text" >
+              <span><CountUp end={35} duration={5} /></span>
+              <span>+</span>
             </p>
-            <p style={{fontSize: "18px", lineHeight: "18px", fontWeight: "400", margin: "0px", color: "#ffffff90"}} >Production Projects</p>
+            <p className="ow-data-item-text2" >Production Projects</p>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "200px", height: "200px", border: "1px solid #ffffff", borderRadius: "100px", }} >
-            <p style={{fontSize: "50px", lineHeight: "50px", color: "#ffffff", fontWeight: "500", margin: "0px"}} >
-            <span><CountUp end={28} duration={5} /></span>
-            <span>+</span>
+          <div className="ow-data-item" >
+            <p className="ow-data-item-text" >
+              <span><CountUp end={28} duration={5} /></span>
+              <span>+</span>
             </p>
-            <p style={{fontSize: "18px", lineHeight: "18px", fontWeight: "400", margin: "0px", color: "#ffffff90"}} >Technologies Used</p>
+            <p className="ow-data-item-text2" >Technologies Used</p>
           </div>
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", width: "200px", height: "200px", border: "1px solid #ffffff", borderRadius: "100px", }} >
-            <p style={{fontSize: "50px", lineHeight: "50px", color: "#ffffff", fontWeight: "500", margin: "0px"}} >
-            <span><CountUp end={6}/></span>
-            <span>+</span>
+          <div className="ow-data-item" >
+            <p className="ow-data-item-text" >
+              <span><CountUp end={6} /></span>
+              <span>+</span>
             </p>
-            <p style={{fontSize: "18px", lineHeight: "18px", fontWeight: "400", margin: "0px", color: "#ffffff90"}} >Enterprise Clients</p>
+            <p className="ow-data-item-text2" >Enterprise Clients</p>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ const OurWork = () => {
             <img src={Portfolio1} alt="ow-image" className="ow-section2-content1-image" />
           </div>
           <div className="ow-section2-content1-text-cont">
-            <h4 className="ow-section2-content1-title">CharterXE Admin Dashboard</h4>
+            <h4 className="ow-section2-content1-title">CharterXE</h4>
             <p className="ow-section2-content1-body">Designed for team-based flight booking management, the dashboard streamlines operations for administrators. Features include team management, booking monitoring, flight coordination, inquiry handling, and performance tracking for mobile app users.</p>
             <div className="ow-section2-content1-tags">
               <div className="ow-section2-content1-tags-cont">
@@ -135,36 +135,36 @@ const OurWork = () => {
           portfolioData.map((item) => {
             return (
               <>
-                <div id={item.id} key={item.id} style={{ backgroundColor: item.backgroundColor }} className="ow-section2-content1-wrapper">
-                  <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
-                  <div className="ow-section2-content1-image-cont">
-                    <img src={item.image} alt="ow-image" className="ow-section2-content1-image" />
+                <div id={item.id} key={item.id} style={{ backgroundColor: item.backgroundColor }} className="oww-section2-content1-wrapper">
+                  <h1 className="oww-section2-content1-background">OUR PRODUCTS</h1>
+                  <div className="oww-section2-content1-image-cont">
+                    <img src={item.image} alt="ow-image" className="oww-section2-content1-image" />
                   </div>
-                  <div className="ow-section2-content1-text-cont">
-                    <h4 className="ow-section2-content1-title">{item.title}</h4>
-                    <p className="ow-section2-content1-body">{item.content}</p>
-                    <div className="ow-section2-content1-tags">
-                      <div className="ow-section2-content1-tags-cont">
+                  <div className="oww-section2-content1-text-cont">
+                    <h4 className="oww-section2-content1-title">{item.title}</h4>
+                    <p className="oww-section2-content1-body">{item.content}</p>
+                    <div className="oww-section2-content1-tags">
+                      <div className="oww-section2-content1-tags-cont">
                         {
                           item.devTags.map((item, index) => (
-                            <p key={index} className="ow-section2-content1-tag1">{item.tag}</p>
+                            <p key={index} className="oww-section2-content1-tag1">{item.tag}</p>
                           ))
                         }
                       </div>
-                      <div className="ow-section2-content1-source-wrapper">
+                      <div className="oww-section2-content1-source-wrapper">
                         {
                           item.projectLink && (
-                            <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="ow-section2-content1-sample">
-                              <Icon icon="ion:arrow-up-right-box-outline" width={25} height={25} color="#ffffff" className="ow-icon" />
-                              <p className="ow-section2-content1-sample-text">View Project</p>
+                            <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="oww-section2-content1-sample">
+                              <Icon icon="ion:arrow-up-right-box-outline" color="#ffffff" className="oww-icon" />
+                              <p className="oww-section2-content1-sample-text">View Project</p>
                             </a>
                           )
                         }
                         {
                           item.sourceCode && (
-                            <a href={item.sourceCode} className="ow-section2-content1-source">
-                              <Icon icon="ant-design:github-filled" width={25} height={25} color="#ffffff" className="ow-icon" />
-                              <p className="ow-section2-content1-source-text">Source Code</p>
+                            <a href={item.sourceCode} className="oww-section2-content1-source">
+                              <Icon icon="ant-design:github-filled" color="#ffffff" className="oww-icon" />
+                              <p className="oww-section2-content1-source-text">Source Code</p>
                             </a>
                           )
                         }

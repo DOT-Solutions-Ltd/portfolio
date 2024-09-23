@@ -76,3 +76,40 @@
     text-align: center;
     font-weight: 300;
 }
+
+/**! MOBILE PHONE STYLES DO NOT TOUCH */
+@media screen and (max-width: 767px) {
+    .footer-container {
+        padding: 54px 37.5px;
+    }
+    .footer-top-section {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 34px;
+    }
+    .footer-logo {
+        width: 170px;
+    }
+    .footer-top-section-button {
+        all: unset;
+        background-color: #25A0A0;
+        padding: 1.5px 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        gap: 10px;
+        color: #ffffff;
+    }
+    .footer-bottom-section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .fb-section {
+        align-items: center;
+        justify-content: center;
+    }
+}

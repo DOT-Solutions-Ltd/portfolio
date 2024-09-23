@@ -53,3 +53,84 @@
     background-color: #FFFFFF;
     color: #25A0A0;
 }
+.nav-mobile-menu {
+    display: none;
+}
+
+
+/*Screen styling for MOBILE PHONES*/
+@media screen and (max-width: 767px) {
+    .nav-container {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 20px 20px;
+        z-index: 100;
+    }
+    .nav-links-container {
+        display: none;
+    }
+    .nav-button {
+        display: none;
+    }
+    .nav-mobile-menu {
+        all: unset;
+        display: block;
+        width: 24px;
+        height: 24px;
+        color: #25A0A0;
+    }
+    .nav-logo {
+        width: 122px;
+        height: 29.5px;
+        cursor: pointer;
+    }
+    .nav-mobile-side-bar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background-color: #FFFFFF;
+        padding: 18px 20px;
+    }
+    .nav-mobile-side-bar-top-section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-mobile-links-cont {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding-top: 26px;
+        height: 90%;
+        position: relative;
+    }
+    .nav-mobile-links {
+        list-style: none;
+        color: #00000080;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 400;
+        background-color: #0000000D;
+        border-radius: 3px;
+        padding: 8px 16px;
+    }
+    .nav-mobile-contact-button {
+        all: unset;
+        background-color: #25A0A0;
+        padding: 15px 30px;
+        color: #FFFFFF;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+    }
+}
