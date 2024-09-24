@@ -222,7 +222,7 @@
         line-height: 37.19px;
     }
     .ow-section2-content1-image {
-        height: 211.66px;
+        height: 191.66px;
     }
     .ow-section2-content1-text-cont {
         padding: 0px;
@@ -263,6 +263,7 @@
         line-height: 14.11px;
         padding: 5px;
         border-radius: 2.53px;
+        margin: 0px;
     }
     .ow-section2-content1-source-wrapper {
         flex-wrap: wrap;

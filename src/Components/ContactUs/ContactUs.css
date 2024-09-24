@@ -145,12 +145,12 @@
         font-size: 12.72px;
     }
     .cu-form-button {
-        font-size: 9.72px;
+        font-size: 14.72px;
         border-radius: 48.62px;
         gap: 4.86px;
     }
     .cu-form-button-icon {
-        width: 10.72px;
-        height: 10.72px;
+        width: 14.72px;
+        height: 14.72px;
     }
 }
