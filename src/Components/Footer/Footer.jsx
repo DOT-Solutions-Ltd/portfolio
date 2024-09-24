@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <footer className='footer-container' >
         <div className="footer-top-section">
-            <img src={Logo} alt="footer-logo" className="footer-logo" />
+            <Link to="/about#contact-us" style={{all: "unset"}} ><img src={Logo} alt="footer-logo" className="footer-logo" /></Link>
             <button className="footer-top-section-button">
                 <p>Contact Us</p>
                 <Icon icon="iconamoon:arrow-right-1" width={20} height={20} color="#ffffff" />

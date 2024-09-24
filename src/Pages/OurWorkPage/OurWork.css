@@ -239,8 +239,8 @@
         text-align: center;
     }
     .ow-section2-content1-body {
-        font-size: 10px;
-        line-height: 10px;
+        font-size: 12px;
+        line-height: 12px;
         max-width: 333px;
         text-align: center;
     }
@@ -264,7 +264,7 @@
     }
     .ow-section2-content1-source-wrapper {
         flex-wrap: wrap;
-        gap: 8px;
+        gap: 15px;
         justify-content: center;
         margin-top: 20px;
     }
