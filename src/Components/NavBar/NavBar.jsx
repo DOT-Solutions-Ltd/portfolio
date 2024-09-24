@@ -27,7 +27,7 @@ const NavBar = () => {
             {/**MOBILE NAVIGATION */}
 
             <button onClick={() => setIsMobileNavActive((prev) => !prev)} className='nav-mobile-menu'>
-                <Icon icon="jam:menu" width={26} height={26} color='#25A0A0' />
+                <Icon icon="jam:menu" width={28} height={28} color='#25A0A0' />
             </button>
             {isMobileNavActive && (
                 <div className='nav-mobile-side-bar'>

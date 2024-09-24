@@ -193,8 +193,9 @@
         max-width: 403.63px;
     }
     .ow-section1-text2 {
-        font-size: 13.26px;
-        line-height: 13.26px;
+        margin-top: 10px;
+        font-size: 14.26px;
+        line-height: 14.26px;
         max-width: 315.13px;
     }
     .ow-data-cont {
@@ -250,6 +251,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 30px;
     }
     .ow-section2-content1-tags-cont {
         flex-wrap: wrap;
@@ -257,8 +259,8 @@
         justify-content: center;
     }
     .ow-section2-content1-tag1 {
-        font-size: 12.11px;
-        line-height: 12.11px;
+        font-size: 14.11px;
+        line-height: 14.11px;
         padding: 5px;
         border-radius: 2.53px;
     }
