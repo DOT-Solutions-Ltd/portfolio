@@ -27,7 +27,7 @@ const ContactUs = ({ id = "" }) => {
             .then(
                 () => {
                     alert("Message Sent")
-                    sendForm.current.reset
+                    sendForm.current.reset;
                     console.log('SUCCESS!');
                 },
                 (error) => {

@@ -43,7 +43,6 @@ const AboutUs = () => {
           <img src={Image3} alt="au-img" className="au-section2-content2-image2" />
         </div>
       </div>
-      
       <WhyUs />
       <Teams />
       <Faqs />
