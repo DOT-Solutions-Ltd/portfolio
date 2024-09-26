@@ -7,11 +7,13 @@ const Footer = () => {
   return (
     <footer className='footer-container' >
         <div className="footer-top-section">
-            <Link to="/about#contact-us" style={{all: "unset"}} ><img src={Logo} alt="footer-logo" className="footer-logo" /></Link>
+            <img src={Logo} alt="footer-logo" className="footer-logo" />
+            <Link to="/about#contact-us" style={{all: "unset"}} >
             <button className="footer-top-section-button">
                 <p>Contact Us</p>
                 <Icon icon="iconamoon:arrow-right-1" width={20} height={20} color="#ffffff" />
             </button>
+            </Link>
         </div>
         <div className="footer-bottom-section">
             <div className="fb-section">

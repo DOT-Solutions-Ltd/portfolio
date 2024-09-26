@@ -317,3 +317,385 @@
         width: 129.76px;
     }
 }
+
+/**! IPAD AIR, IPAD MINI AND SMALL TABS*/
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .wu-container {
+        padding: 40px 20px;
+        background-color: #F7FCFC;
+    }
+    .wu-text1 {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .wu-text2 {
+        font-size: 35px;
+        line-height: 35px;
+        max-width: 389px;
+        margin-top: 8px;
+    }
+    .wu-section1 {
+        width: 588px;
+        height: 358px;
+        margin-top: 23px;
+        border-radius: 6.36px;
+    }
+    .wu-wrapper1 {
+        height: 100%;
+    }
+    .wu-wrapper2 {
+        height: 230px;
+        width: 253px;
+    }
+    .wu-section1-content-wrapper {
+        padding: 0px 7.2px;
+        padding-top: 5.72px;
+        gap: 7.42px;
+    }
+    .wu-s-t-w-img {
+        width: 179.47px;
+    }
+    .wu-s-t-w-text1 {
+        font-size: 24.84px;
+        line-height: 24.84px;
+        max-width: 336px;
+    }
+    .wu-s-c-b-w {
+        padding-left: 26.93px;
+    }
+    .wu-s-c-b-w-img {
+        width: 135.06px;
+        margin-bottom: 6.08px;
+    }
+    .wu-s-c-b-w-text {
+        font-size: 14.36px;
+        line-height: 14.36px;
+        width: 80px;
+        text-align: center;
+    }
+    .wu-s-c-b-w-img2 {
+        width: 79px;
+        height: 24px;
+    }
+    .wu-section2 {
+        margin-top: 4px;
+        grid-template-columns: 178.77px 1fr;
+        gap: 4px;
+    }
+    .wu-section2-left {
+        height: 142.41px;
+        border-radius: 4.24px;
+        padding-top: 9.12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .wu-section2-left-text {
+        font-size: 20.84px;
+        line-height: 20.84px;
+        padding: 0px 0.18px;
+        max-width: 150px;
+        align-self: flex-end;
+    }
+    .wu-section-left-icon {
+        width: 125.87px;
+        height: 113.19px;
+        left: 11.45px;
+    }
+    .wu-section-left-icon2 {
+        width: 67.66px;
+        height: 67.66px;
+        top: 33.67px;
+    }
+    .wu-section-left-icon3 {
+        width: 53.45px;
+        height: 40.25px;
+        bottom: 11.78px;
+    }
+    .wu-section2-right {
+        height: 142.41px;
+        border-radius: 6.36px;
+        padding-top: 11px;
+    }
+    .wu-section2-right-img {
+        width: 225.37px;
+        height: 98.81px;
+        right: 9.62px;
+    }
+    .wu-section2-right-img2 {
+        width: 80.57px;
+        height: 106.54px;
+        margin-left: 5.09px;
+    }
+    .wu-section2-right-img3 {
+        width: 90.51px;
+        height: 90.51px;
+        top: 0.05px;
+        left: 0.02px;
+    }
+    .wu-section2-right-img4 {
+        width: 100.92px;
+        height: 100.92px;
+    }
+    .wu-section2-right-text {
+        font-size: 15.6px;
+        line-height: 15.6px;
+        top: 5.87px;
+        right: 9.52px;
+        width: 209.76px;
+    }
+  }
+
+  /**! BIG TABS AND IPAD PRO*/
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+    .wu-container {
+        padding: 40px 20px;
+        background-color: #F7FCFC;
+    }
+    .wu-text1 {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .wu-text2 {
+        font-size: 35px;
+        line-height: 35px;
+        max-width: 389px;
+        margin-top: 8px;
+    }
+    .wu-section1 {
+        width: 888px;
+        height: 358px;
+        margin-top: 23px;
+        border-radius: 6.36px;
+    }
+    .wu-wrapper1 {
+        height: 100%;
+    }
+    .wu-wrapper2 {
+        height: 270px;
+        width: 293px;
+    }
+    .wu-section1-content-wrapper {
+        padding: 0px 7.2px;
+        padding-top: 5.72px;
+        gap: 27.42px;
+    }
+    .wu-s-t-w-img {
+        width: 199.47px;
+    }
+    .wu-s-t-w-text1 {
+        font-size: 34.84px;
+        line-height: 34.84px;
+        max-width: 606px;
+    }
+    .wu-s-c-b-w {
+        padding-left: 106.93px;
+    }
+    .wu-s-c-b-w-img {
+        width: 135.06px;
+        margin-bottom: 6.08px;
+    }
+    .wu-s-c-b-w-text {
+        font-size: 14.36px;
+        line-height: 14.36px;
+        width: 80px;
+        text-align: center;
+    }
+    .wu-s-c-b-w-img2 {
+        width: 79px;
+        height: 24px;
+    }
+    .wu-section2 {
+        margin-top: 4px;
+        grid-template-columns: 238.77px 1fr;
+        gap: 4px;
+    }
+    .wu-section2-left {
+        height: 192.41px;
+        border-radius: 4.24px;
+        padding-top: 9.12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .wu-section2-left-text {
+        font-size: 27.84px;
+        line-height: 27.84px;
+        padding: 0px 10.18px;
+        max-width: 250px;
+        align-self: flex-end;
+    }
+    .wu-section-left-icon {
+        width: 155.87px;
+        height: 143.19px;
+        left: 11.45px;
+    }
+    .wu-section-left-icon2 {
+        width: 87.66px;
+        height: 87.66px;
+        top: 33.67px;
+    }
+    .wu-section-left-icon3 {
+        width: 83.45px;
+        height: 70.25px;
+        bottom: 11.78px;
+    }
+    .wu-section2-right {
+        height: 182.41px;
+        border-radius: 6.36px;
+        padding-top: 19px;
+    }
+    .wu-section2-right-img {
+        width: 395.37px;
+        height: 128.81px;
+        right: 19.62px;
+    }
+    .wu-section2-right-img2 {
+        width: 140.57px;
+        height: 166.54px;
+        margin-left: 5.09px;
+    }
+    .wu-section2-right-img3 {
+        width: 120.51px;
+        height: 120.51px;
+        top: 0.05px;
+        left: 0.02px;
+    }
+    .wu-section2-right-img4 {
+        width: 140.92px;
+        height: 140.92px;
+    }
+    .wu-section2-right-text {
+        font-size: 25.6px;
+        line-height: 25.6px;
+        top: 0.87px;
+        right: 9.52px;
+        width: 309.76px;
+    }
+  }
+
+  /**! SMALL LAPTOP SCREENS DO NOT TOUCH*/
+@media screen and (min-width: 1025px) and (max-width: 1103px) {
+    .wu-container {
+        padding: 40px 20px;
+        background-color: #F7FCFC;
+    }
+    .wu-text1 {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .wu-text2 {
+        font-size: 35px;
+        line-height: 35px;
+        max-width: 389px;
+        margin-top: 8px;
+    }
+    .wu-section1 {
+        width: 888px;
+        height: 358px;
+        margin-top: 23px;
+        border-radius: 6.36px;
+    }
+    .wu-wrapper1 {
+        height: 100%;
+    }
+    .wu-wrapper2 {
+        height: 270px;
+        width: 293px;
+    }
+    .wu-section1-content-wrapper {
+        padding: 0px 7.2px;
+        padding-top: 5.72px;
+        gap: 27.42px;
+    }
+    .wu-s-t-w-img {
+        width: 199.47px;
+    }
+    .wu-s-t-w-text1 {
+        font-size: 34.84px;
+        line-height: 34.84px;
+        max-width: 606px;
+    }
+    .wu-s-c-b-w {
+        padding-left: 106.93px;
+    }
+    .wu-s-c-b-w-img {
+        width: 135.06px;
+        margin-bottom: 6.08px;
+    }
+    .wu-s-c-b-w-text {
+        font-size: 14.36px;
+        line-height: 14.36px;
+        width: 80px;
+        text-align: center;
+    }
+    .wu-s-c-b-w-img2 {
+        width: 79px;
+        height: 24px;
+    }
+    .wu-section2 {
+        margin-top: 4px;
+        grid-template-columns: 238.77px 1fr;
+        gap: 4px;
+    }
+    .wu-section2-left {
+        height: 192.41px;
+        border-radius: 4.24px;
+        padding-top: 9.12px;
+        display: flex;
+        flex-direction: column;
+    }
+    .wu-section2-left-text {
+        font-size: 27.84px;
+        line-height: 27.84px;
+        padding: 0px 10.18px;
+        max-width: 250px;
+        align-self: flex-end;
+    }
+    .wu-section-left-icon {
+        width: 155.87px;
+        height: 143.19px;
+        left: 11.45px;
+    }
+    .wu-section-left-icon2 {
+        width: 87.66px;
+        height: 87.66px;
+        top: 33.67px;
+    }
+    .wu-section-left-icon3 {
+        width: 83.45px;
+        height: 70.25px;
+        bottom: 11.78px;
+    }
+    .wu-section2-right {
+        height: 182.41px;
+        border-radius: 6.36px;
+        padding-top: 19px;
+    }
+    .wu-section2-right-img {
+        width: 395.37px;
+        height: 128.81px;
+        right: 19.62px;
+    }
+    .wu-section2-right-img2 {
+        width: 140.57px;
+        height: 166.54px;
+        margin-left: 5.09px;
+    }
+    .wu-section2-right-img3 {
+        width: 120.51px;
+        height: 120.51px;
+        top: 0.05px;
+        left: 0.02px;
+    }
+    .wu-section2-right-img4 {
+        width: 140.92px;
+        height: 140.92px;
+    }
+    .wu-section2-right-text {
+        font-size: 25.6px;
+        line-height: 25.6px;
+        top: 0.87px;
+        right: 9.52px;
+        width: 309.76px;
+    }
+  }
+  

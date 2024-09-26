@@ -1,8 +1,6 @@
 import Image1 from "../../assets/about-us1.png";
 import Image2 from "../../assets/about-us2.png";
 import Image3 from "../../assets/about-us3.png";
-import Image4 from "../../assets/about-us4.png";
-import { Icon } from "@iconify/react";
 import WhyUs from "../../Components/WhyUs/WhyUs";
 import Teams from "../../Components/Teams/Teams";
 import Faqs from "../../Components/FAQs/Faqs";

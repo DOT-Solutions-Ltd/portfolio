@@ -11,7 +11,7 @@ const OurWork = () => {
     <div className='ow-container' >
       <div className="ow-section1">
         <h1 className="ow-section1-text1">Our Portfolio of Success Stories.</h1>
-        <p className="ow-section1-text2">We work with clients in all sectors and of all sizes, from bootstrapped startups to Fortune</p>
+        <p className="ow-section1-text2">We work with clients in all sectors and of all sizes, from bootstrapped startups to Fortune 500 and government parastatals</p>
         <div className="ow-data-cont" >
           <div className="ow-data-item" >
             <p className="ow-data-item-text" >
@@ -135,36 +135,36 @@ const OurWork = () => {
           portfolioData.map((item) => {
             return (
               <>
-                <div id={item.id} key={item.id} style={{ backgroundColor: item.backgroundColor }} className="oww-section2-content1-wrapper">
-                  <h1 className="oww-section2-content1-background">OUR PRODUCTS</h1>
-                  <div className="oww-section2-content1-image-cont">
-                    <img src={item.image} alt="ow-image" className="oww-section2-content1-image" />
+                <div id={item.id} key={item.id} style={{ backgroundColor: item.backgroundColor }} className="ow-section2-content1-wrapper">
+                  <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
+                  <div className="ow-section2-content1-image-cont">
+                    <img src={item.image} alt="ow-image" className="ow-section2-content1-image" />
                   </div>
-                  <div className="oww-section2-content1-text-cont">
-                    <h4 className="oww-section2-content1-title">{item.title}</h4>
-                    <p className="oww-section2-content1-body">{item.content}</p>
-                    <div className="oww-section2-content1-tags">
-                      <div className="oww-section2-content1-tags-cont">
+                  <div className="ow-section2-content1-text-cont">
+                    <h4 className="ow-section2-content1-title">{item.title}</h4>
+                    <p className="ow-section2-content1-body">{item.content}</p>
+                    <div className="ow-section2-content1-tags">
+                      <div className="ow-section2-content1-tags-cont">
                         {
                           item.devTags.map((item, index) => (
-                            <p key={index} className="oww-section2-content1-tag1">{item.tag}</p>
+                            <p key={index} className="ow-section2-content1-tag1">{item.tag}</p>
                           ))
                         }
                       </div>
-                      <div className="oww-section2-content1-source-wrapper">
+                      <div className="ow-section2-content1-source-wrapper">
                         {
                           item.projectLink && (
-                            <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="oww-section2-content1-sample">
-                              <Icon icon="ion:arrow-up-right-box-outline" color="#ffffff" className="oww-icon" />
-                              <p className="oww-section2-content1-sample-text">View Project</p>
+                            <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="ow-section2-content1-sample">
+                              <Icon icon="ion:arrow-up-right-box-outline" color="#ffffff" className="ow-icon" />
+                              <p className="ow-section2-content1-sample-text">View Project</p>
                             </a>
                           )
                         }
                         {
                           item.sourceCode && (
-                            <a href={item.sourceCode} className="oww-section2-content1-source">
-                              <Icon icon="ant-design:github-filled" color="#ffffff" className="oww-icon" />
-                              <p className="oww-section2-content1-source-text">Source Code</p>
+                            <a href={item.sourceCode} className="ow-section2-content1-source">
+                              <Icon icon="ant-design:github-filled" color="#ffffff" className="ow-icon" />
+                              <p className="ow-section2-content1-source-text">Source Code</p>
                             </a>
                           )
                         }
