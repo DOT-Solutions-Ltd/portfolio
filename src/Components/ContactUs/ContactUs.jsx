@@ -29,6 +29,12 @@ const ContactUs = ({ id = "" }) => {
                     alert("Message Sent")
                     sendForm.current.reset;
                     console.log('SUCCESS!');
+                    setForm({
+                        ...form,
+                        name: "",
+                        email: "",
+                        message: ""
+                    })
                 },
                 (error) => {
                     alert("Message failed, please try again")
@@ -53,10 +59,10 @@ const ContactUs = ({ id = "" }) => {
                         <Icon icon="iconoir:mail" width={30} height={30} />
                         <input type="text" id='email' name="user_email" value={form.email} onChange={handleFormInput} className="cu-input" placeholder="Enter Your E-mail" />
                     </div>
-                    <div className="cu-message-wrapper" >
+                
                         <label htmlFor="message" className="cu-form-label">Message</label>
                         <textarea type="text" id='message' name="message" value={form.message} onChange={handleFormInput} className="cu-input2" placeholder="Write Your Message" />
-                    </div>
+             
                     <button type="submit" value="Send" className="cu-form-button">
                         <p>Send Message</p>
                         <Icon icon="iconamoon:arrow-right-1" className="cu-form-button-icon" color="#ffffff" />

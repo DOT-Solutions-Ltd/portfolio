@@ -276,7 +276,7 @@ export const portfolioData = [
         ],
         projectLink: "https://www.instiglabs.io/",
         sourceCode: "",
-        backgroundColor: "#00AB2E"
+        backgroundColor: "#8F2A2C"
     },
     {
         id: 10,

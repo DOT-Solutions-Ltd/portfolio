@@ -141,7 +141,8 @@
         line-height: 12.72px;
     }
     .cu-input2 {
-        width: 288.32px;
+        padding: 14.1px 10px;
+        width: 93%;
         font-size: 12.72px;
     }
     .cu-form-button {
@@ -154,3 +155,249 @@
         height: 14.72px;
     }
 }
+
+/**! IPAD AIR, IPAD MINI AND SMALL TABS*/
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .cu-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .cu-left-section {
+        padding: 35px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cu-right-section-image {
+        display: none;
+    }
+    .cu-text1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .cu-text2 {
+        font-size: 17.09px;
+        line-height: 17.09px;
+        margin-top: 9px;
+        max-width: 535px;
+        text-align: center;
+    }
+    .cu-form {
+        padding: 23.34px;
+        border-radius: 9.72px;
+        width: 565px;
+    }
+    .cu-form-label {
+        font-size: 12.16px;
+        line-height: 12.16px;
+    }
+    .cu-input-wrapper {
+        padding: 14.1px 10px;
+        border-radius: 7.29px;
+        width: 93%;
+        gap: 8.27px;
+    }
+    .cu-input {
+        font-size: 12.72px;
+        line-height: 12.72px;
+    }
+    .cu-input2 {
+        padding: 14.1px 10px;
+        width: 93%;
+        font-size: 12.72px;
+    }
+    .cu-form-button {
+        font-size: 14.72px;
+        border-radius: 48.62px;
+        gap: 4.86px;
+    }
+    .cu-form-button-icon {
+        width: 14.72px;
+        height: 14.72px;
+    }
+  }
+
+  /**! BIG TABS AND IPAD PRO*/
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+    .cu-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .cu-left-section {
+        padding: 35px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cu-right-section-image {
+        display: none;
+    }
+    .cu-text1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .cu-text2 {
+        font-size: 17.09px;
+        line-height: 17.09px;
+        margin-top: 9px;
+        max-width: 535px;
+        text-align: center;
+    }
+    .cu-form {
+        padding: 23.34px;
+        border-radius: 9.72px;
+        width: 835px;
+    }
+    .cu-form-label {
+        font-size: 12.16px;
+        line-height: 12.16px;
+    }
+    .cu-input-wrapper {
+        padding: 14.1px 10px;
+        border-radius: 7.29px;
+        width: 93%;
+        gap: 8.27px;
+    }
+    .cu-input {
+        font-size: 12.72px;
+        line-height: 12.72px;
+    }
+    .cu-input2 {
+        padding: 14.1px 10px;
+        width: 93%;
+        font-size: 12.72px;
+    }
+    .cu-form-button {
+        font-size: 14.72px;
+        border-radius: 48.62px;
+        gap: 4.86px;
+    }
+    .cu-form-button-icon {
+        width: 14.72px;
+        height: 14.72px;
+    }
+  }
+
+  /**! SMALL LAPTOP SCREENS DO NOT TOUCH*/
+@media screen and (min-width: 1025px) and (max-width: 1103px) {
+    .cu-container {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .cu-left-section {
+        padding: 35px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cu-right-section-image {
+        display: none;
+    }
+    .cu-text1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .cu-text2 {
+        font-size: 17.09px;
+        line-height: 17.09px;
+        margin-top: 9px;
+        max-width: 535px;
+        text-align: center;
+    }
+    .cu-form {
+        padding: 23.34px;
+        border-radius: 9.72px;
+        width: 835px;
+    }
+    .cu-form-label {
+        font-size: 12.16px;
+        line-height: 12.16px;
+    }
+    .cu-input-wrapper {
+        padding: 14.1px 10px;
+        border-radius: 7.29px;
+        width: 93%;
+        gap: 8.27px;
+    }
+    .cu-input {
+        font-size: 12.72px;
+        line-height: 12.72px;
+    }
+    .cu-input2 {
+        padding: 14.1px 10px;
+        width: 93%;
+        font-size: 12.72px;
+    }
+    .cu-form-button {
+        font-size: 14.72px;
+        border-radius: 48.62px;
+        gap: 4.86px;
+    }
+    .cu-form-button-icon {
+        width: 14.72px;
+        height: 14.72px;
+    }
+  }
+
+  /**! MEDIUM LAPTOP SCREENS DO NOT TOUCH*/
+@media screen and (min-width: 1104px) and (max-width: 1388px) {
+    .cu-container {
+        margin-top: 80px;
+        gap: 0px;
+    }
+    .cu-left-section {
+        padding: 35px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cu-text1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .cu-text2 {
+        font-size: 17.09px;
+        line-height: 17.09px;
+        margin-top: 9px;
+        max-width: 535px;
+        text-align: center;
+    }
+    .cu-form {
+        padding: 23.34px;
+        border-radius: 9.72px;
+        width: 535px;
+    }
+    .cu-form-label {
+        font-size: 12.16px;
+        line-height: 12.16px;
+    }
+    .cu-input-wrapper {
+        padding: 14.1px 10px;
+        border-radius: 7.29px;
+        width: 93%;
+        gap: 8.27px;
+    }
+    .cu-input {
+        font-size: 12.72px;
+        line-height: 12.72px;
+    }
+    .cu-input2 {
+        padding: 14.1px 10px;
+        width: 93%;
+        font-size: 12.72px;
+    }
+    .cu-form-button {
+        font-size: 14.72px;
+        border-radius: 48.62px;
+        gap: 4.86px;
+    }
+    .cu-form-button-icon {
+        width: 14.72px;
+        height: 14.72px;
+    }
+  }
+  

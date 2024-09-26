@@ -20,6 +20,8 @@
 .teams-section2-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 36.5px;
     width: 100%;
 }
@@ -97,3 +99,4 @@
         font-weight: 400;
     }
 }
+

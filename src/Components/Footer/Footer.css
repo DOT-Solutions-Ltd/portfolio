@@ -113,3 +113,94 @@
         justify-content: center;
     }
 }
+
+/**! IPAD AIR, IPAD MINI AND SMALL TABS*/
+@media screen and (min-width: 768px) and (max-width: 932px) {
+    .footer-container {
+        padding: 54px 37.5px;
+    }
+    .footer-top-section {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 34px;
+    }
+    .footer-logo {
+        width: 170px;
+    }
+    .footer-top-section-button {
+        all: unset;
+        background-color: #25A0A0;
+        padding: 1.5px 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        gap: 10px;
+        color: #ffffff;
+    }
+    .footer-bottom-section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .fb-section {
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  /**! BIG TABS AND IPAD PRO*/
+@media screen and (min-width: 933px) and (max-width: 1024px) {
+    .footer-container {
+        padding: 54px 37.5px;
+    }
+    .footer-top-section {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 34px;
+    }
+    .footer-logo {
+        width: 170px;
+    }
+    .footer-top-section-button {
+        all: unset;
+        background-color: #25A0A0;
+        padding: 1.5px 30px;
+        display: flex;
+        align-items: center;
+        border-radius: 100px;
+        gap: 10px;
+        color: #ffffff;
+    }
+    .footer-bottom-section {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .fb-section {
+        align-items: center;
+        justify-content: center;
+    }
+  }
+
+  /**! SMALL LAPTOP SCREENS DO NOT TOUCH*/
+@media screen and (min-width: 1025px) and (max-width: 1103px) {
+    .footer-container {
+        padding: 54px 150px;
+    }
+    .footer-bottom-section {
+        all: unset;
+        margin-top: 46px;
+        display: flex;
+        gap: 100px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+        border-bottom: 1px solid #FFFFFF33;
+    }
+  }

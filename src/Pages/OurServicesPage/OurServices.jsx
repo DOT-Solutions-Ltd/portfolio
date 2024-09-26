@@ -17,7 +17,7 @@ const OurServices = () => {
       </div>
       <div className="os-section2">
         <div className="os-section2-content1">
-          <img src={Pic1} alt="os-pic" className="os-section2-content1-image" />
+          <img src={Pic1} alt="os-pic" className="os-section2-content1-image2" />
           <div className="os-section2-content1-text-wrapper">
             <h4 className="os-section2-content1-text1">Web Application Design</h4>
             <p className="os-section2-content1-text2">Our incredible UI/UX design team works with each client individually to create a beautiful, intuitive product. We work with your existing logo/branding guidelines to create User Flow, visual and clickable mockups using Sketch and Invision. We are able to deliver a web application design that is responsive, user-friendly and logical. Our team of programmers and developers are well-versed in a variety of languages, giving our clients more options when building an application from scratch with specific functions and requirements. We are not fans of traditional app developing packages, as these often lead to bugs and limits the ability to implement truly unique features into our clients&apos projects.Instead, we enjoy working one on one with each of our individual clients to determine their needs while also developing a solution and project scope that works best without eliminating the overall ability of the final web app itself. At Essential Designs, we work only with the best senior programmers and developers around, allowing our clients to get the most out of any app they envision from scratch.</p>
