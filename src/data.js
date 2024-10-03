@@ -13,6 +13,8 @@ import Portfolio8 from "./assets/ow-image20.webp";
 import Portfolio9 from "./assets/ow-image21.png";
 import Portfolio10 from "./assets/ow-image22.png";
 import Portfolio11 from "./assets/ow-image12.jpeg";
+import Portfolio12 from "./assets/Screenshot (157).png"
+
 export const navLinks = [
     {
         id: 1,
@@ -292,5 +294,20 @@ export const portfolioData = [
         projectLink: "",
         sourceCode: "https://github.com/boluwatifeajayi/astra-app",
         backgroundColor: ""
+    },
+    {
+        id: 11,
+        image: Portfolio12,
+        title: "AO CyberSecurity Partners",
+        content: "The Official Website Of AO cybersecurity partners, built with amazing user interface",
+        devTags: [
+            { tag: "React.js" },
+            { tag: "Email.js" },
+            { tag: "React Router" },
+            { tag: "Website"}
+        ],
+        projectLink: "",
+        sourceCode: "",
+        backgroundColor: "#8F2A2C"
     },
 ]
