@@ -139,6 +139,8 @@
     cursor: pointer;
 }
 .ow-icon {
+    width: 25px;
+    height: 25px;
     transition: opacity 0.25s ease;
 }
 .ow-section2-content1-sample:hover .ow-icon {

@@ -121,6 +121,7 @@
         background-color: #0000000D;
         border-radius: 3px;
         padding: 8px 16px;
+        cursor: pointer;
     }
     .nav-mobile-contact-button {
         all: unset;
@@ -198,6 +199,7 @@
         background-color: #0000000D;
         border-radius: 3px;
         padding: 8px 16px;
+        cursor: pointer;
     }
     .nav-mobile-contact-button {
         all: unset;
