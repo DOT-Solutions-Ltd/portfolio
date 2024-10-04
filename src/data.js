@@ -3,6 +3,7 @@ import TeamPic2 from "./assets/team-pic2.png";
 import TeamPic3 from "./assets/team-pic3.png";
 import TeamPic4 from "./assets/team-pic4.png";
 import TeamPic5 from "./assets/team-pic5.png";
+import TeamPic6 from "./assets/abiloye2.png";
 import Portfolio2 from "./assets/ow-image2.png";
 import Portfolio3 from "./assets/ow-image4.png";
 import Portfolio4 from "./assets/ow-image6.png";
@@ -13,7 +14,7 @@ import Portfolio8 from "./assets/ow-image20.webp";
 import Portfolio9 from "./assets/ow-image21.png";
 import Portfolio10 from "./assets/ow-image22.png";
 import Portfolio11 from "./assets/ow-image12.jpeg";
-import Portfolio12 from "./assets/Screenshot (157).png"
+import Portfolio12 from "./assets/Screenshot (157).png";
 
 export const navLinks = [
     {
@@ -69,6 +70,12 @@ export const team = [
         name: "ajayi boluwatife",
         title: "chief technology officer"
     },
+    {
+        id: 6,
+        image: TeamPic6,
+        name: "Mogbeyiteren Abiloye",
+        title: "Chief Information Security Officer"
+    }
 ];
 
 export const faqData1 = [
