@@ -138,7 +138,7 @@ const OurWork = () => {
                 <div id={item.id} key={item.id} style={{ backgroundColor: item.backgroundColor }} className="ow-section2-content1-wrapper">
                   <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
                   <div className="ow-section2-content1-image-cont">
-                    <img src={item.image} alt="ow-image" className="ow-section2-content1-image" />
+                    <img src={item.image} alt="ow-image" className={`${item.id === 11 || item.id === 8 ? "ow-section2-content1-image2" : "ow-section2-content1-image"}`} />
                   </div>
                   <div className="ow-section2-content1-text-cont">
                     <h4 className="ow-section2-content1-title">{item.title}</h4>
