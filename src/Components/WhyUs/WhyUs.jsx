@@ -19,16 +19,16 @@ const WhyUs = () => {
             <h1 className="wu-text2">we @dOTsolutions provide trusted & best solutions</h1>
             <div>
                 <div className="wu-section1">
-                    <img src={Wu4} alt="wrapper" className="wu-wrapper1" />
-                    <img src={Wu5} alt="wrapper" className="wu-wrapper2" />
+                    <img loading="lazy" src={Wu4} alt="wrapper" className="wu-wrapper1" />
+                    <img loading="lazy" src={Wu5} alt="wrapper" className="wu-wrapper2" />
                     <div className="wu-section1-content-wrapper">
-                        <img src={Wu1} alt="wu-img" className="wu-s-t-w-img" />
+                        <img loading="lazy" src={Wu1} alt="wu-img" className="wu-s-t-w-img" />
                         <div className="wu-s-c-t-w">
                             <h1 className="wu-s-t-w-text1">we develop innovative, creative and industry standard software that leaves our clients both amazed & satisfied</h1>
                             <div className="wu-s-c-b-w">
-                                <img src={Wu2} alt="wu-img" className="wu-s-c-b-w-img" />
+                                <img loading="lazy" src={Wu2} alt="wu-img" className="wu-s-c-b-w-img" />
                                 <p className="wu-s-c-b-w-text">Customer Review</p>
-                                <img src={Hero} alt="hero" className="wu-s-c-b-w-img2" />
+                                <img loading="lazy" src={Hero} alt="hero" className="wu-s-c-b-w-img2" />
                             </div>
                         </div>
                     </div>
@@ -36,16 +36,16 @@ const WhyUs = () => {
                 <div className="wu-section2">
                     <div className="wu-section2-left">
                         <h1 className="wu-section2-left-text">we value your time here</h1>
-                        <img src={WuLeft1} alt="wu-img" className="wu-section-left-icon" />
-                        <img src={WuLeft2} alt="wu-img" className="wu-section-left-icon2" />
-                        <img src={WuLeft3} alt="wu-img" className="wu-section-left-icon3" />
+                        <img loading="lazy" src={WuLeft1} alt="wu-img" className="wu-section-left-icon" />
+                        <img loading="lazy" src={WuLeft2} alt="wu-img" className="wu-section-left-icon2" />
+                        <img loading="lazy" src={WuLeft3} alt="wu-img" className="wu-section-left-icon3" />
                     </div>
                     <div className="wu-section2-right">
                         <h1 className="wu-section2-right-text">designing sophisticated websites</h1>
-                        <img src={WuRight1} alt="wu-image" className="wu-section2-right-img" />
-                        <img src={WuRight2} alt="wu-image" className="wu-section2-right-img2" />
-                        <img src={WuRight3} alt="wu-image" className="wu-section2-right-img3" />
-                        <img src={WuRight4} alt="wu-image" className="wu-section2-right-img4" />
+                        <img loading="lazy" src={WuRight1} alt="wu-image" className="wu-section2-right-img" />
+                        <img loading="lazy" src={WuRight2} alt="wu-image" className="wu-section2-right-img2" />
+                        <img loading="lazy" src={WuRight3} alt="wu-image" className="wu-section2-right-img3" />
+                        <img loading="lazy" src={WuRight4} alt="wu-image" className="wu-section2-right-img4" />
                     </div>
                 </div>
             </div>

@@ -18,7 +18,7 @@ const AboutUs = () => {
             <h1 className="au-section1-content1-text2">We provide innovative design solutions & expert talents</h1>
             <p className="au-section1-content1-text3">From a small team of five people to a leading global remote team of professional designers & developers that strive to develop valuable digital products for people worldwide.</p>
           </div>
-          <img src={Image1} alt="about-us-img" className="au-section1-content-image" />
+          <img loading="lazy" src={Image1} alt="about-us-img" className="au-section1-content-image" />
         </div>
       </div>
       <div className="au-section2">
@@ -27,7 +27,7 @@ const AboutUs = () => {
           <p className="au-section2-content1-text2">People, awareness and growth. The conceptual idea of the value system is a consistent trinity. Our people, being the main value of the company, come to effective growth while remaining purposeful.</p>
         </div>
         <div className="au-section2-content2">
-          <img src={Image2} alt="au-img" className="au-section2-content2-image" />
+          <img loading="lazy" src={Image2} alt="au-img" className="au-section2-content2-image" />
           <div className="au-section2-content2-text-wrapper">
             <h4 className="au-section2-content2-text1">Our Mission</h4>
             <p className="au-section2-content2-text2">We aim to serve businesses with customer centric, result oriented, cost effective and innovative solutions that open up endless customer-engaging possibilities and drive value to global clients. We work to make our customers happy through dedication and professionalism of our team.</p>
@@ -38,7 +38,7 @@ const AboutUs = () => {
             <h4 className="au-section2-content2-text1">Our Vision</h4>
             <p className="au-section2-content2-text2">Our vision is to be a global leader in Technology by 2030 and achieve the ultimate goal of our customers, employees, and partners with superior quality services and ultramodern solutions. We keep an eye on new market trends and room for growth, offering constant innovation and transformation to the industry and the economy.</p>
           </div>
-          <img src={Image3} alt="au-img" className="au-section2-content2-image2" />
+          <img loading="lazy" src={Image3} alt="au-img" className="au-section2-content2-image2" />
         </div>
       </div>
       <WhyUs />
