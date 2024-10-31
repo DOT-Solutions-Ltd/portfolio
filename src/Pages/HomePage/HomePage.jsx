@@ -37,7 +37,7 @@ const HomePage = () => {
                                 <Icon icon="octicon:arrow-up-right-16" height={28} width={28} color="#FFFFFF" />
                             </Link>
                         </div>
-                        <img src={SampleImage1} alt="sample-img" className="lp-sample1-img" />
+                        <img loading="lazy" src={SampleImage1} alt="sample-img" className="lp-sample1-img" />
                     </div>
                     <div className="lp-sample2">
                         <div className="lp-sample1-top">
@@ -46,7 +46,7 @@ const HomePage = () => {
                                 <Icon icon="octicon:arrow-up-right-16" height={28} width={28} color="#FFFFFF" />
                             </Link>
                         </div>
-                        <img src={SampleImage2} alt="sample-img" className="lp-sample1-img" />
+                        <img loading="lazy" src={SampleImage2} alt="sample-img" className="lp-sample1-img" />
                     </div>
                     <div className="lp-sample3">
                         <div className="lp-sample1-top">
@@ -55,7 +55,7 @@ const HomePage = () => {
                                 <Icon icon="octicon:arrow-up-right-16" height={28} width={28} color="#FFFFFF" />
                             </Link>
                         </div>
-                        <img src={SampleImage3} alt="sample-img" className="lp-sample1-img" />
+                        <img loading="lazy" src={SampleImage3} alt="sample-img" className="lp-sample1-img" />
                     </div>
                 </div>
             </div>

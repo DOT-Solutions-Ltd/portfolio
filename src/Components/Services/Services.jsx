@@ -8,9 +8,9 @@ const Services = () => {
     return (
         <div className='services-container' >
             <div className="services-box"></div>
-            <img src={ServicesIcon1} alt="services-icon" className="services-icon1" />
-            <img src={ServicesIcon2} alt="services-icon" className="services-icon2" />
-            <img src={ServicesIcon3} alt="services-icon" className="services-icon3" />
+            <img loading="lazy" src={ServicesIcon1} alt="services-icon" className="services-icon1" />
+            <img loading="lazy" src={ServicesIcon2} alt="services-icon" className="services-icon2" />
+            <img loading="lazy" src={ServicesIcon3} alt="services-icon" className="services-icon3" />
             <h1 className="services-section1-text2">these are some of our software services</h1>
             <div className="services-sections-wrapper">
                 <div className="services-section1">

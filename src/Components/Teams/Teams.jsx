@@ -11,7 +11,7 @@ const Teams = () => {
             {
                 team.map((item) => (
                     <div key={item.id} className="team-details">
-                        <img src={item.image} alt="team-image" className="team-details-image" />
+                        <img loading="lazy" src={item.image} alt="team-image" className="team-details-image" />
                         <h5 className="team-details-name">{item.name}</h5>
                         <p className="team-details-title">{item.title}</p>
                     </div>

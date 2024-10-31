@@ -3,13 +3,21 @@ import { Icon } from "@iconify/react";
 import Portfolio1 from "../../assets/ow-image16.jpg";
 import Portfolio2 from "../../assets/ow-image11.png";
 import Portfolio3 from "../../assets/ow-image17.avif";
+import backgroundImage from "../../assets/ow-image.png";
 import CountUp from "react-countup";
+import useBackgroundImage from "../../Hooks/useBackgroundImage";
 import "./OurWork.css"
 
 const OurWork = () => {
+  const [elementRef, isLoaded] = useBackgroundImage(backgroundImage);
+
   return (
     <div className='ow-container' >
-      <div className="ow-section1">
+      <div
+        ref={elementRef}
+        className={`ow-section1 lazy-background ${isLoaded ? 'lazy-background--loaded' : 'lazy-background--loading'}`}
+        style={isLoaded ? { backgroundImage: `url(${backgroundImage})` } : {}}
+      >
         <h1 className="ow-section1-text1">Our Portfolio of Success Stories.</h1>
         <p className="ow-section1-text2">We work with clients in all sectors and of all sizes, from bootstrapped startups to Fortune 500 and government parastatals</p>
         <div className="ow-data-cont" >
@@ -47,7 +55,7 @@ const OurWork = () => {
         <div id="ow-content1" className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <img src={Portfolio1} alt="ow-image" className="ow-section2-content1-image" />
+            <img loading="lazy" src={Portfolio1} alt="ow-image" className="ow-section2-content1-image" />
           </div>
           <div className="ow-section2-content1-text-cont">
             <h4 className="ow-section2-content1-title">CharterXE</h4>
@@ -76,7 +84,7 @@ const OurWork = () => {
         <div id="ow-content2" style={{ backgroundColor: "#00ABA3" }} className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <img src={Portfolio2} alt="ow-image" className="ow-section2-content1-image" />
+            <img loading="lazy" src={Portfolio2} alt="ow-image" className="ow-section2-content1-image" />
           </div>
           <div className="ow-section2-content1-text-cont">
             <h4 className="ow-section2-content1-title">Villaja E-commerce</h4>
@@ -105,7 +113,7 @@ const OurWork = () => {
         <div id="ow-content3" style={{ backgroundColor: "#8F2A2C" }} className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <img src={Portfolio3} alt="ow-image" className="ow-section2-content1-image" />
+            <img loading="lazy" src={Portfolio3} alt="ow-image" className="ow-section2-content1-image" />
           </div>
           <div className="ow-section2-content1-text-cont">
             <h4 className="ow-section2-content1-title">Immigration Question | Open Forum Web</h4>
@@ -138,7 +146,7 @@ const OurWork = () => {
                 <div id={item.id} key={item.id} style={{ backgroundColor: item.backgroundColor }} className="ow-section2-content1-wrapper">
                   <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
                   <div className="ow-section2-content1-image-cont">
-                    <img src={item.image} alt="ow-image" className={`${item.id === 11 || item.id === 8 ? "ow-section2-content1-image2" : "ow-section2-content1-image"}`} />
+                    <img loading="lazy" src={item.image} alt="ow-image" className={`${item.id === 11 || item.id === 8 ? "ow-section2-content1-image2" : "ow-section2-content1-image"}`} />
                   </div>
                   <div className="ow-section2-content1-text-cont">
                     <h4 className="ow-section2-content1-title">{item.title}</h4>

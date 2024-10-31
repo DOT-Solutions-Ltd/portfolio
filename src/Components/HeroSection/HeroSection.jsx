@@ -10,7 +10,7 @@ import "./HeroSection.css"
 const HeroSection = () => {
     return (
         <div className='hs-container' >
-            <img src={HeroIcon} alt="hero-icon" className="hero-icon" />
+            <img loading="lazy" src={HeroIcon} alt="hero-icon" className="hero-icon" />
             <div className="hs-top-section">
                 <div className="hs-section1">
                     <p className="hs-section1-text">we always deliver</p>
@@ -38,19 +38,19 @@ const HeroSection = () => {
                         <p className="hs-section4-button-text" >Hire Us</p>
                         <Icon icon="octicon:arrow-up-right-16" className="hs-section4-button-icon" color="#FFFFFF" />
                     </Link>
-                    <img src={HeroProfilePic} alt="profile-pic" className="hs-section4-image" />
+                    <img loading="lazy" src={HeroProfilePic} alt="profile-pic" className="hs-section4-image" />
                 </div>
             </div>
             <div className="hs-bottom-section">
                 <div className="hs-bottom-section1">
                     <h1 className="hs-bottom-section1-text">top mobile app developer</h1>
-                    <img src={HeroPic1} alt="hero-pic1" className="hs-bottom-section1-img" />
+                    <img loading="lazy" src={HeroPic1} alt="hero-pic1" className="hs-bottom-section1-img" />
                 </div>
                 <div className="hs-bottom-section2">
-                    <img src={HeroPic2} alt="hero-pic-2" className="hs-bottom-section2-top" />
+                    <img loading="lazy" src={HeroPic2} alt="hero-pic-2" className="hs-bottom-section2-top" />
                     <div className="hs-bottom-section2-bottom">
                         <h1 className="hs-bottom-section2-text">website design</h1>
-                        <img src={HeroPic3} alt="hero-pic" className="hs-bottom-section2-bottom-img" />
+                        <img loading="lazy" src={HeroPic3} alt="hero-pic" className="hs-bottom-section2-bottom-img" />
                     </div>
                 </div>
             </div>

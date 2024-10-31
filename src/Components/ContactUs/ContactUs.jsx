@@ -69,7 +69,7 @@ const ContactUs = ({ id = "" }) => {
                     </button>
                 </form>
             </div>
-            <img src={ContactUsImage} alt="cu-image" className="cu-right-section-image" />
+            <img loading="lazy" src={ContactUsImage} alt="cu-image" className="cu-right-section-image" />
         </div>
     )
 };

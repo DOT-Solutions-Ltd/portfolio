@@ -10,7 +10,7 @@ const NavBar = () => {
 
     return (
         <nav className='nav-container' >
-            <Link to="/" style={{ all: "unset" }} ><img src={NavLogo} alt="nav-logo" className='nav-logo' /></Link>
+            <Link to="/" style={{ all: "unset" }} ><img loading="lazy" src={NavLogo} alt="nav-logo" className='nav-logo' /></Link>
             <ul className="nav-links-container">
                 {
                     navLinks.map(({ pageName, path, id }) => {
@@ -32,7 +32,7 @@ const NavBar = () => {
             {isMobileNavActive && (
                 <div className='nav-mobile-side-bar'>
                     <div className="nav-mobile-side-bar-top-section">
-                        <Link onClick={() => setIsMobileNavActive((prev) => !prev)} to="/" style={{ all: "unset" }} ><img src={NavLogo} alt="nav-logo" className='nav-logo' /></Link>
+                        <Link onClick={() => setIsMobileNavActive((prev) => !prev)} to="/" style={{ all: "unset" }} ><img loading="lazy" src={NavLogo} alt="nav-logo" className='nav-logo' /></Link>
                         <Icon icon="fluent-mdl2:cancel" width={26} height={26} color='#25A0A0' onClick={() => setIsMobileNavActive((prev) => !prev)} />
                     </div>
                     <ul className="nav-mobile-links-cont">
