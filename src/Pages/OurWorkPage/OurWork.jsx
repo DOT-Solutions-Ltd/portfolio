@@ -1,18 +1,24 @@
 import { portfolioData } from "../../data";
 import { Icon } from "@iconify/react";
-import Portfolio1 from "../../assets/ow-image16.jpg";
-import Portfolio2 from "../../assets/ow-image11.png";
-import Portfolio3 from "../../assets/ow-image17.avif";
-import backgroundImage from "../../assets/ow-image.png";
 import CountUp from "react-countup";
-import useBackgroundImage from "../../Hooks/useBackgroundImage";
+import useBackgroundImage from "../../Hooks/useBackgroundImageOptimized";
+import OptimizedImage from "../../Components/OptimizedImage";
+import backgroundImage from "../../assets/ow-image.png";
 import "./OurWork.css"
+
+// Dynamic imports for the static images
+const staticImages = {
+  Portfolio1: () => import("../../assets/ow-image16.jpg"),
+  Portfolio2: () => import("../../assets/ow-image11.png"),
+  Portfolio3: () => import("../../assets/ow-image17.avif"),
+  backgroundImage: () => import("../../assets/ow-image.png")
+};
 
 const OurWork = () => {
   const [elementRef, isLoaded] = useBackgroundImage(backgroundImage);
 
   return (
-    <div className='ow-container' >
+    <div className='ow-container'>
       <div
         ref={elementRef}
         className={`ow-section1 lazy-background ${isLoaded ? 'lazy-background--loaded' : 'lazy-background--loading'}`}
@@ -20,42 +26,48 @@ const OurWork = () => {
       >
         <h1 className="ow-section1-text1">Our Portfolio of Success Stories.</h1>
         <p className="ow-section1-text2">We work with clients in all sectors and of all sizes, from bootstrapped startups to Fortune 500 and government parastatals</p>
-        <div className="ow-data-cont" >
-          <div className="ow-data-item" >
-            <p className="ow-data-item-text" >
+        <div className="ow-data-cont">
+          <div className="ow-data-item">
+            <p className="ow-data-item-text">
               <span><CountUp end={5} /></span>
               <span>+</span>
             </p>
-            <p className="ow-data-item-text2" >Years of Experience</p>
+            <p className="ow-data-item-text2">Years of Experience</p>
           </div>
-          <div className="ow-data-item" >
-            <p className="ow-data-item-text" >
+          <div className="ow-data-item">
+            <p className="ow-data-item-text">
               <span><CountUp end={35} duration={5} /></span>
               <span>+</span>
             </p>
-            <p className="ow-data-item-text2" >Production Projects</p>
+            <p className="ow-data-item-text2">Production Projects</p>
           </div>
-          <div className="ow-data-item" >
-            <p className="ow-data-item-text" >
+          <div className="ow-data-item">
+            <p className="ow-data-item-text">
               <span><CountUp end={28} duration={5} /></span>
               <span>+</span>
             </p>
-            <p className="ow-data-item-text2" >Technologies Used</p>
+            <p className="ow-data-item-text2">Technologies Used</p>
           </div>
-          <div className="ow-data-item" >
-            <p className="ow-data-item-text" >
+          <div className="ow-data-item">
+            <p className="ow-data-item-text">
               <span><CountUp end={6} /></span>
               <span>+</span>
             </p>
-            <p className="ow-data-item-text2" >Enterprise Clients</p>
+            <p className="ow-data-item-text2">Enterprise Clients</p>
           </div>
         </div>
       </div>
+      
       <div className="ow-section2">
         <div id="ow-content1" className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <img loading="lazy" src={Portfolio1} alt="ow-image" className="ow-section2-content1-image" />
+            <OptimizedImage 
+              src={staticImages.Portfolio1}
+              alt="CharterXE"
+              className="ow-section2-content1-image"
+              priority="high"
+            />
           </div>
           <div className="ow-section2-content1-text-cont">
             <h4 className="ow-section2-content1-title">CharterXE</h4>
@@ -84,7 +96,11 @@ const OurWork = () => {
         <div id="ow-content2" style={{ backgroundColor: "#00ABA3" }} className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <img loading="lazy" src={Portfolio2} alt="ow-image" className="ow-section2-content1-image" />
+            <OptimizedImage 
+              src={staticImages.Portfolio2}
+              alt="Villaja E-commerce"
+              className="ow-section2-content1-image"
+            />
           </div>
           <div className="ow-section2-content1-text-cont">
             <h4 className="ow-section2-content1-title">Villaja E-commerce</h4>
@@ -113,7 +129,11 @@ const OurWork = () => {
         <div id="ow-content3" style={{ backgroundColor: "#8F2A2C" }} className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <img loading="lazy" src={Portfolio3} alt="ow-image" className="ow-section2-content1-image" />
+            <OptimizedImage 
+              src={staticImages.Portfolio3}
+              alt="Immigration Question"
+              className="ow-section2-content1-image"
+            />
           </div>
           <div className="ow-section2-content1-text-cont">
             <h4 className="ow-section2-content1-title">Immigration Question | Open Forum Web</h4>
@@ -139,54 +159,51 @@ const OurWork = () => {
             </div>
           </div>
         </div>
-        {
-          portfolioData.map((item) => {
-            return (
-              <>
-                <div id={item.id} key={item.id} style={{ backgroundColor: item.backgroundColor }} className="ow-section2-content1-wrapper">
-                  <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
-                  <div className="ow-section2-content1-image-cont">
-                    <img loading="lazy" src={item.image} alt="ow-image" className={`${item.id === 11 || item.id === 8 ? "ow-section2-content1-image2" : "ow-section2-content1-image"}`} />
-                  </div>
-                  <div className="ow-section2-content1-text-cont">
-                    <h4 className="ow-section2-content1-title">{item.title}</h4>
-                    <p className="ow-section2-content1-body">{item.content}</p>
-                    <div className="ow-section2-content1-tags">
-                      <div className="ow-section2-content1-tags-cont">
-                        {
-                          item.devTags.map((item, index) => (
-                            <p key={index} className="ow-section2-content1-tag1">{item.tag}</p>
-                          ))
-                        }
-                      </div>
-                      <div className="ow-section2-content1-source-wrapper">
-                        {
-                          item.projectLink && (
-                            <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="ow-section2-content1-sample">
-                              <Icon icon="ion:arrow-up-right-box-outline" color="#ffffff" className="ow-icon" />
-                              <p className="ow-section2-content1-sample-text">View Project</p>
-                            </a>
-                          )
-                        }
-                        {
-                          item.sourceCode && (
-                            <a href={item.sourceCode} className="ow-section2-content1-source">
-                              <Icon icon="ant-design:github-filled" color="#ffffff" className="ow-icon" />
-                              <p className="ow-section2-content1-source-text">Source Code</p>
-                            </a>
-                          )
-                        }
-                      </div>
-                    </div>
-                  </div>
+        {portfolioData.map((item) => (
+          <div 
+            id={item.id} 
+            key={item.id} 
+            style={{ backgroundColor: item.backgroundColor }} 
+            className="ow-section2-content1-wrapper"
+          >
+            <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
+            <div className="ow-section2-content1-image-cont">
+              <OptimizedImage 
+                src={item.image}
+                alt={item.title}
+                className={`${item.id === 11 || item.id === 8 ? "ow-section2-content1-image2" : "ow-section2-content1-image"}`}
+              />
+            </div>
+            <div className="ow-section2-content1-text-cont">
+              <h4 className="ow-section2-content1-title">{item.title}</h4>
+              <p className="ow-section2-content1-body">{item.content}</p>
+              <div className="ow-section2-content1-tags">
+                <div className="ow-section2-content1-tags-cont">
+                  {item.devTags.map((tag, index) => (
+                    <p key={index} className="ow-section2-content1-tag1">{tag.tag}</p>
+                  ))}
                 </div>
-              </>
-            )
-          })
-        }
+                <div className="ow-section2-content1-source-wrapper">
+                  {item.projectLink && (
+                    <a href={item.projectLink} target="_blank" rel="noopener noreferrer" className="ow-section2-content1-sample">
+                      <Icon icon="ion:arrow-up-right-box-outline" color="#ffffff" className="ow-icon" />
+                      <p className="ow-section2-content1-sample-text">View Project</p>
+                    </a>
+                  )}
+                  {item.sourceCode && (
+                    <a href={item.sourceCode} className="ow-section2-content1-source">
+                      <Icon icon="ant-design:github-filled" color="#ffffff" className="ow-icon" />
+                      <p className="ow-section2-content1-source-text">Source Code</p>
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default OurWork
+export default OurWork;
