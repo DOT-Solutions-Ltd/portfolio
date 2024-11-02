@@ -3,20 +3,25 @@ import HeroSection from "../../Components/HeroSection/HeroSection";
 import Carousel from "../../Components/Carousel/Carousel";
 import ServicesSection from "../../Components/Services/Services";
 import WhyUs from "../../Components/WhyUs/WhyUs";
-import SampleImage1 from "../../assets/ow-image16.jpg";
-import SampleImage2 from "../../assets/ow-image11.png";
-import SampleImage3 from "../../assets/ow-image17.avif";
 import Teams from "../../Components/Teams/Teams";
 import Faqs from "../../Components/FAQs/Faqs";
 import ContactUs from "../../Components/ContactUs/ContactUs";
+import OptimizedImage from "../../Components/OptimizedImage";
 import { Icon } from "@iconify/react";
 import { Link } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import "./HomePage.css"
 
+// Dynamic imports for sample images
+const sampleImages = {
+    SampleImage1: () => import("../../assets/ow-image16.jpg"),
+    SampleImage2: () => import("../../assets/ow-image11.png"),
+    SampleImage3: () => import("../../assets/ow-image17.avif")
+};
+
 const HomePage = () => {
     return (
-        <div className="home-page-container" >
+        <div className="home-page-container">
             <HeroSection />
             <Carousel />
             <ServicesSection />
@@ -24,45 +29,85 @@ const HomePage = () => {
             <div className="latest-projects-container">
                 <div className="lp-text-cont">
                     <p className="lp-text1">Project</p>
-                    <h2 className="lp-text2" >Latest Projects</h2>
+                    <h2 className="lp-text2">Latest Projects</h2>
                 </div>
-                <Link to="/works" style={{ all: "unset" }} >
-                    <Icon icon="octicon:arrow-up-right-16" height={108} width={108} color="#000000" className="arrow-up-right-16" />
+                <Link to="/works" style={{ all: "unset" }}>
+                    <Icon 
+                        icon="octicon:arrow-up-right-16" 
+                        height={108} 
+                        width={108} 
+                        color="#000000" 
+                        className="arrow-up-right-16" 
+                    />
                 </Link>
                 <div className="lp-samples-container">
+                    {/* Sample Project 1 */}
                     <div className="lp-sample1">
                         <div className="lp-sample1-top">
                             <p className="lp-sample1-text">Sample of Our Projects</p>
                             <Link to="/works#ow-content1" className="lp-sample1-icon-wrapper">
-                                <Icon icon="octicon:arrow-up-right-16" height={28} width={28} color="#FFFFFF" />
+                                <Icon 
+                                    icon="octicon:arrow-up-right-16" 
+                                    height={28} 
+                                    width={28} 
+                                    color="#FFFFFF" 
+                                />
                             </Link>
                         </div>
-                        <img loading="lazy" src={SampleImage1} alt="sample-img" className="lp-sample1-img" />
+                        <OptimizedImage 
+                            src={sampleImages.SampleImage1}
+                            alt="Project Sample 1"
+                            className="lp-sample1-img"
+                            priority="high" // First visible sample
+                        />
                     </div>
+
+                    {/* Sample Project 2 */}
                     <div className="lp-sample2">
                         <div className="lp-sample1-top">
                             <p className="lp-sample1-text">Sample of Our Projects</p>
                             <Link to="/works#ow-content2" className="lp-sample1-icon-wrapper">
-                                <Icon icon="octicon:arrow-up-right-16" height={28} width={28} color="#FFFFFF" />
+                                <Icon 
+                                    icon="octicon:arrow-up-right-16" 
+                                    height={28} 
+                                    width={28} 
+                                    color="#FFFFFF" 
+                                />
                             </Link>
                         </div>
-                        <img loading="lazy" src={SampleImage2} alt="sample-img" className="lp-sample1-img" />
+                        <OptimizedImage 
+                            src={sampleImages.SampleImage2}
+                            alt="Project Sample 2"
+                            className="lp-sample1-img"
+                        />
                     </div>
+
+                    {/* Sample Project 3 */}
                     <div className="lp-sample3">
                         <div className="lp-sample1-top">
                             <p className="lp-sample1-text">Sample of Our Projects</p>
                             <Link to="/works#ow-content3" className="lp-sample1-icon-wrapper">
-                                <Icon icon="octicon:arrow-up-right-16" height={28} width={28} color="#FFFFFF" />
+                                <Icon 
+                                    icon="octicon:arrow-up-right-16" 
+                                    height={28} 
+                                    width={28} 
+                                    color="#FFFFFF" 
+                                />
                             </Link>
                         </div>
-                        <img loading="lazy" src={SampleImage3} alt="sample-img" className="lp-sample1-img" />
+                        <OptimizedImage 
+                            src={sampleImages.SampleImage3}
+                            alt="Project Sample 3"
+                            className="lp-sample1-img"
+                        />
                     </div>
                 </div>
             </div>
             <Teams />
             <div className="tools-container">
                 <h1 className="tools-text">some of the technologies we work with</h1>
-                <Marquee pauseOnHover={true} className="tools-carousel" >
+                <Marquee pauseOnHover={true} className="tools-carousel">
+                    {/* Technology icons remain unchanged as they are already optimized */}
                     <Icon icon="skill-icons:javascript" height={65} width={65} style={{ marginRight: "47px" }} />
                     <Icon icon="skill-icons:html" height={65} width={65} style={{ marginRight: "47px" }} />
                     <Icon icon="skill-icons:css" height={65} width={65} style={{ marginRight: "47px" }} />
@@ -97,7 +142,7 @@ const HomePage = () => {
             <Faqs />
             <ContactUs id="contact-us" />
         </div>
-    )
-}
+    );
+};
 
-export default HomePage
+export default HomePage;

@@ -2,7 +2,6 @@ import { Icon } from "@iconify/react";
 import PropTypes from "prop-types";
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
 import ContactUsImage from "../../assets/contact-us.png";
 import "./ContactUs.css"
 

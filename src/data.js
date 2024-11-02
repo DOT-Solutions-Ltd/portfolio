@@ -1,21 +1,3 @@
-import TeamPic1 from "./assets/team-pic1.png";
-import TeamPic2 from "./assets/team-pic2.png";
-import TeamPic3 from "./assets/team-pic3.png";
-import TeamPic4 from "./assets/team-pic4.png";
-import TeamPic5 from "./assets/team-pic5.png";
-import TeamPic6 from "./assets/abiloye2.png";
-import Portfolio2 from "./assets/ow-image2.png";
-import Portfolio3 from "./assets/ow-image4.png";
-import Portfolio4 from "./assets/ow-image6.png";
-import Portfolio5 from "./assets/ow-image19.png";
-import Portfolio6 from "./assets/ow-image3.png";
-import Portfolio7 from "./assets/ow-image18.jpeg";
-import Portfolio8 from "./assets/ow-image20.webp";
-import Portfolio9 from "./assets/ow-image21.png";
-import Portfolio10 from "./assets/ow-image22.png";
-import Portfolio11 from "./assets/ow-image12.jpeg";
-import Portfolio12 from "./assets/Screenshot (157).png";
-
 export const navLinks = [
     {
         id: 1,
@@ -39,40 +21,62 @@ export const navLinks = [
     }
 ];
 
+// Replace static imports with dynamic imports
+const imageImports = {
+    TeamPic1: () => import('./assets/team-pic1.png'),
+    TeamPic2: () => import('./assets/team-pic2.png'),
+    TeamPic3: () => import('./assets/team-pic3.png'),
+    TeamPic4: () => import('./assets/team-pic4.png'),
+    TeamPic5: () => import('./assets/team-pic5.png'),
+    TeamPic6: () => import('./assets/abiloye2.png'),
+    Portfolio2: () => import('./assets/ow-image2.png'),
+    Portfolio3: () => import('./assets/ow-image4.png'),
+    Portfolio4: () => import('./assets/ow-image6.png'),
+    Portfolio5: () => import('./assets/ow-image19.png'),
+    Portfolio6: () => import('./assets/ow-image3.png'),
+    Portfolio7: () => import('./assets/ow-image18.jpeg'),
+    Portfolio8: () => import('./assets/ow-image20.webp'),
+    Portfolio9: () => import('./assets/ow-image21.png'),
+    Portfolio10: () => import('./assets/ow-image22.png'),
+    Portfolio11: () => import('./assets/ow-image12.jpeg'),
+    Portfolio12: () => import('./assets/Screenshot (157).png')
+};
+
+// Update the team array to use dynamic imports
 export const team = [
     {
         id: 1,
-        image: TeamPic1,
+        image: imageImports.TeamPic1,
         name: "Daniel Fasiku",
         title: "co-founder/chief executive officer (CEO & CPA)"
     },
     {
         id: 2,
-        image: TeamPic2,
+        image: imageImports.TeamPic2,
         name: "julius niyi-onifade",
         title: "co-founder/ president & chief operations officer (COO)"
     },
     {
         id: 3,
-        image: TeamPic3,
+        image: imageImports.TeamPic3,
         name: "oladipupo laleye",
         title: "co-founder/ chief product designer"
     },
     {
         id: 4,
-        image: TeamPic4,
+        image: imageImports.TeamPic4,
         name: "bamtefa todimu",
         title: "chief information technology officer"
     },
     {
         id: 5,
-        image: TeamPic5,
+        image: imageImports.TeamPic5,
         name: "ajayi boluwatife",
         title: "chief technology officer"
     },
     {
         id: 6,
-        image: TeamPic6,
+        image: imageImports.TeamPic6,
         name: "Mogbeyiteren Abiloye",
         title: "Chief Information Security Officer"
     }
@@ -147,7 +151,7 @@ export const faqData2 = [
 export const portfolioData = [
     {
         id: 1,
-        image: Portfolio2,
+        image: imageImports.Portfolio2,
         title: "Blackcopper Website",
         content: "The Official Website Of Blackcopper Services Limited, built with amazing user interface",
         devTags: [
@@ -162,7 +166,7 @@ export const portfolioData = [
     },
     {
         id: 2,
-        image: Portfolio3,
+        image: imageImports.Portfolio3,
         title: "Aiden Dashboard Web Application",
         content: "In This admin dashboard for aiden Restaurant owners and administrators can efficiently oversee menu items, table configurations, user roles, schedules, and more, the dashboard offers a great platform for streamlined restaurant management.",
         devTags: [
@@ -179,7 +183,7 @@ export const portfolioData = [
     },
     {
         id: 3,
-        image: Portfolio4,
+        image: imageImports.Portfolio4,
         title: "Charterxe Website",
         content: "The Official Website Of Charterxe brand of falconaero, built with amazing user interface",
         devTags: [
@@ -194,7 +198,7 @@ export const portfolioData = [
     },
     {
         id: 4,
-        image: Portfolio5,
+        image: imageImports.Portfolio5,
         title: "Falconaero Canada Website",
         content: "FalconAero Canada boasts a beautifully designed website showcasing subtle animations and stylish elements. Tailored for the Canadian market, the site effectively reflects FalconAero's brand identity.",
         devTags: [
@@ -210,7 +214,7 @@ export const portfolioData = [
     },
     {
         id: 5,
-        image: Portfolio6,
+        image: imageImports.Portfolio6,
         title: "Villaja E-commerce Mobile Application",
         content: "A de-centralized marketplace featuring robust capabilities: escrow ordering system, seamless transactions via payment gateways, real-time order tracking, multi-store vendors, secure authentication, and intuitive dashboards for both users and administrators, chat systems plus many more features.",
         devTags: [
@@ -227,7 +231,7 @@ export const portfolioData = [
     },
     {
         id: 6,
-        image: Portfolio7,
+        image: imageImports.Portfolio7,
         title: "mylegalsoftware client mobile app.",
         content: "The client mobile application for myls case management software where users can effectively manage their cases",
         devTags: [
@@ -243,7 +247,7 @@ export const portfolioData = [
     },
     {
         id: 7,
-        image: Portfolio8,
+        image: imageImports.Portfolio8,
         title: "Zenfipay Services Website",
         content: "The Official Website Of Zenfipay Service Limited, built with amazing user interface",
         devTags: [
@@ -258,7 +262,7 @@ export const portfolioData = [
     },
     {
         id: 8,
-        image: Portfolio9,
+        image: imageImports.Portfolio9,
         title: "Next Nomad",
         content: "An all-in-one workspace booking app with real-time availability, payment integration,, booking management, user profiles, workspace selection, reviews and ratings, and admin dashboards. Streamline your booking experience with these and many more features.",
         devTags: [
@@ -274,7 +278,7 @@ export const portfolioData = [
     },
     {
         id: 9,
-        image: Portfolio10,
+        image: imageImports.Portfolio10,
         title: "Instig Labs",
         content: "The Official Website Of Instiglabs, built with amazing user interface",
         devTags: [
@@ -289,7 +293,7 @@ export const portfolioData = [
     },
     {
         id: 10,
-        image: Portfolio11,
+        image: imageImports.Portfolio11,
         title: "Astra Mobile App",
         content: "Astra is a mobile application for connecting tutors with student based on the courses they want to learn and particular learning styles they choose",
         devTags: [
@@ -304,7 +308,7 @@ export const portfolioData = [
     },
     {
         id: 11,
-        image: Portfolio12,
+        image: imageImports.Portfolio12,
         title: "AO CyberSecurity Partners",
         content: "The Official Website Of AO cybersecurity partners, built with amazing user interface",
         devTags: [
