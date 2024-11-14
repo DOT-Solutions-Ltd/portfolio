@@ -31,7 +31,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className="hs-section3">
-                    <p className="hs-section3-text">business to business solutions, custom website, UI/UX Design, web development, mobile design and more...</p>
+                    <p className="hs-section3-text">business to business solutions, e-commerce website, ERP software, web development, mobile app development and more...</p>
                 </div>
                 <div className="hs-section4">
                     <Link to="/#contact-us" className="hs-section4-button">
