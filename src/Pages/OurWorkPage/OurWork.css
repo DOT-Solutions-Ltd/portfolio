@@ -193,6 +193,30 @@
 .ow-section2-content1-source:hover .ow-section2-content1-source-text {
     opacity: 0.5;
 }
+.ow-section1 {
+    position: relative;
+    height: 732px;
+}
+.ow-section1-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ow-section1-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+    padding-top: 59px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 /**! MOBILE PHONE STYLES DO NOT TOUCH */
 @media screen and (max-width: 767px) {
@@ -303,6 +327,14 @@
         font-size: 13px;
         line-height: 13px;
     }
+    .ow-section1 {
+        height: 537px;
+    }
+    .ow-section1-content {
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 /**! IPAD AIR, IPAD MINI AND SMALL TABS*/
@@ -402,6 +434,14 @@
         font-size: 13px;
         line-height: 13px;
     }
+    .ow-section1 {
+        height: 837px;
+    }
+    .ow-section1-content {
+        padding-top: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
   }
 
   /**! BIG TABS AND IPAD PRO*/
@@ -500,6 +540,11 @@
     .ow-section2-content1-source-text {
         font-size: 13px;
         line-height: 13px;
+    }
+    .ow-section1-content {
+        padding-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
   }
 
