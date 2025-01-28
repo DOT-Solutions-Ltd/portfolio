@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react";
 import CountUp from "react-countup";
 import useBackgroundImage from "../../Hooks/useBackgroundImageOptimized";
 import OptimizedImage from "../../Components/OptimizedImage";
-import backgroundImage from "../../assets/ow-image.png";
+import backgroundImage from "../../assets/new-bg.png";
 import "./OurWork.css"
 
 // Dynamic imports for the static images
@@ -20,49 +20,50 @@ const OurWork = () => {
   return (
     <div className='ow-container'>
       <div
-        ref={elementRef}
-        className={`ow-section1 lazy-background ${isLoaded ? 'lazy-background--loaded' : 'lazy-background--loading'}`}
-        style={isLoaded ? { backgroundImage: `url(${backgroundImage})` } : {}}
+        className="ow-section1"
       >
-        <h1 className="ow-section1-text1">Our Portfolio of Success Stories.</h1>
-        <p className="ow-section1-text2">We work with clients in all sectors and of all sizes, from bootstrapped startups to Fortune 500 and government parastatals</p>
-        <div className="ow-data-cont">
-          <div className="ow-data-item">
-            <p className="ow-data-item-text">
-              <span><CountUp end={5} /></span>
-              <span>+</span>
-            </p>
-            <p className="ow-data-item-text2">Years of Experience</p>
-          </div>
-          <div className="ow-data-item">
-            <p className="ow-data-item-text">
-              <span><CountUp end={35} duration={5} /></span>
-              <span>+</span>
-            </p>
-            <p className="ow-data-item-text2">Production Projects</p>
-          </div>
-          <div className="ow-data-item">
-            <p className="ow-data-item-text">
-              <span><CountUp end={28} duration={5} /></span>
-              <span>+</span>
-            </p>
-            <p className="ow-data-item-text2">Technologies Used</p>
-          </div>
-          <div className="ow-data-item">
-            <p className="ow-data-item-text">
-              <span><CountUp end={6} /></span>
-              <span>+</span>
-            </p>
-            <p className="ow-data-item-text2">Enterprise Clients</p>
+        <img src={backgroundImage} alt="background" className="ow-section1-background" />
+        <div className="ow-section1-content" >
+          <h1 className="ow-section1-text1">Our Portfolio of Success Stories.</h1>
+          <p className="ow-section1-text2">We work with clients in all sectors and of all sizes, from bootstrapped startups to Fortune 500 and government parastatals</p>
+          <div className="ow-data-cont">
+            <div className="ow-data-item">
+              <p className="ow-data-item-text">
+                <span><CountUp end={5} /></span>
+                <span>+</span>
+              </p>
+              <p className="ow-data-item-text2">Years of Experience</p>
+            </div>
+            <div className="ow-data-item">
+              <p className="ow-data-item-text">
+                <span><CountUp end={35} duration={5} /></span>
+                <span>+</span>
+              </p>
+              <p className="ow-data-item-text2">Production Projects</p>
+            </div>
+            <div className="ow-data-item">
+              <p className="ow-data-item-text">
+                <span><CountUp end={28} duration={5} /></span>
+                <span>+</span>
+              </p>
+              <p className="ow-data-item-text2">Technologies Used</p>
+            </div>
+            <div className="ow-data-item">
+              <p className="ow-data-item-text">
+                <span><CountUp end={6} /></span>
+                <span>+</span>
+              </p>
+              <p className="ow-data-item-text2">Enterprise Clients</p>
+            </div>
           </div>
         </div>
       </div>
-      
+
       <div className="ow-section2">
         <div id="ow-content1" className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <OptimizedImage 
+            <OptimizedImage
               src={staticImages.Portfolio1}
               alt="CharterXE"
               className="ow-section2-content1-image"
@@ -96,7 +97,7 @@ const OurWork = () => {
         <div id="ow-content2" style={{ backgroundColor: "#00ABA3" }} className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <OptimizedImage 
+            <OptimizedImage
               src={staticImages.Portfolio2}
               alt="Villaja E-commerce"
               className="ow-section2-content1-image"
@@ -129,7 +130,7 @@ const OurWork = () => {
         <div id="ow-content3" style={{ backgroundColor: "#8F2A2C" }} className="ow-section2-content1-wrapper">
           <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
           <div className="ow-section2-content1-image-cont">
-            <OptimizedImage 
+            <OptimizedImage
               src={staticImages.Portfolio3}
               alt="Immigration Question"
               className="ow-section2-content1-image"
@@ -160,15 +161,15 @@ const OurWork = () => {
           </div>
         </div>
         {portfolioData.map((item) => (
-          <div 
-            id={item.id} 
-            key={item.id} 
-            style={{ backgroundColor: item.backgroundColor }} 
+          <div
+            id={item.id}
+            key={item.id}
+            style={{ backgroundColor: item.backgroundColor }}
             className="ow-section2-content1-wrapper"
           >
             <h1 className="ow-section2-content1-background">OUR PRODUCTS</h1>
             <div className="ow-section2-content1-image-cont">
-              <OptimizedImage 
+              <OptimizedImage
                 src={item.image}
                 alt={item.title}
                 className={`${item.id === 11 || item.id === 8 ? "ow-section2-content1-image2" : "ow-section2-content1-image"}`}

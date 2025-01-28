@@ -29,6 +29,7 @@ const imageImports = {
     TeamPic4: () => import('./assets/team-pic4.png'),
     TeamPic5: () => import('./assets/team-pic5.png'),
     TeamPic6: () => import('./assets/abiloye2.png'),
+    TeamPic7: () => import('./assets/new-bnh.png'),
     Portfolio2: () => import('./assets/ow-image2.png'),
     Portfolio3: () => import('./assets/ow-image4.png'),
     Portfolio4: () => import('./assets/ow-image6.png'),
@@ -39,7 +40,8 @@ const imageImports = {
     Portfolio9: () => import('./assets/ow-image21.png'),
     Portfolio10: () => import('./assets/ow-image22.png'),
     Portfolio11: () => import('./assets/ow-image12.jpeg'),
-    Portfolio12: () => import('./assets/Screenshot (157).png')
+    Portfolio12: () => import('./assets/Screenshot (157).png'),
+    Portfolio13: () => import('./assets/Screenshot (198).png')
 };
 
 // Update the team array to use dynamic imports
@@ -79,6 +81,12 @@ export const team = [
         image: imageImports.TeamPic6,
         name: "Mogbeyiteren Abiloye",
         title: "Chief Information Security Officer"
+    },
+    {
+        id: 7,
+        image: imageImports.TeamPic7,
+        name: "Nyor Hephzibah Iwanger",
+        title: "Vice President, Product Quality Assurance"
     }
 ];
 
@@ -321,4 +329,18 @@ export const portfolioData = [
         sourceCode: "",
         backgroundColor: "#8F2A2C"
     },
+    {
+        id: 12,
+        image: imageImports.Portfolio13,
+        title: "Gadgt E-commerce Web-Application",
+        content: "Gadgt is an e-commerce web-application built for Gadgt, a startup that sells gadgets and electronics",
+        devTags: [
+            { tag: "UI/UX Design" },
+            { tag: "Figma" },
+            { tag: "Web-Application"}
+        ],
+        projectLink: "https://www.behance.net/gallery/181520729/Tech-Shop-E-Commerce-Website-Landing-Page-Exploration",
+        sourceCode: "",
+        backgroundColor: "#2A69FC"
+    }
 ]
