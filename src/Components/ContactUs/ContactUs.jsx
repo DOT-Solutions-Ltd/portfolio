@@ -3,10 +3,12 @@ import PropTypes from "prop-types";
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import ContactUsImage from "../../assets/contact-us.png";
+import CircularProgress from '@mui/material/CircularProgress';
 import "./ContactUs.css"
 
 const ContactUs = ({ id = "" }) => {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
+    const [isContactMessageSending, setIsContactMessageSending] = useState(false);
     const sendForm = useRef();
 
     const handleFormInput = (event) => {
@@ -19,13 +21,19 @@ const ContactUs = ({ id = "" }) => {
 
     const sendEmail = (event) => {
         event.preventDefault();
+        if(disableSendMessageButton()) {
+            alert("Please fill all the fields")
+            return;
+        }
+        setIsContactMessageSending(true);
         emailjs
-            .sendForm('service_bj0wq37', 'template_fk7bz3p', sendForm.current, {
+            .sendForm('service_ofi4y6v', 'template_fk7bz3p', sendForm.current, {
                 publicKey: 'CHsfcMwRuAQxJF0Vq',
             })
             .then(
                 () => {
-                    alert("Message Sent")
+                    setIsContactMessageSending(false);
+                    alert("Message Sent Successfully")
                     sendForm.current.reset;
                     console.log('SUCCESS!');
                     setForm({
@@ -36,11 +44,19 @@ const ContactUs = ({ id = "" }) => {
                     })
                 },
                 (error) => {
-                    alert("Message failed, please try again")
+                    setIsContactMessageSending(false);
+                    alert("Message failed, please try again later")
                     console.log('FAILED...', error.text);
                 },
             );
     };
+
+    const disableSendMessageButton = () => {
+        if(form.name === "" || form.email === "" || form.message === "") {
+            return true;
+        }
+        return false;
+    }
 
     return (
         <div id={id} className='cu-container' >
@@ -51,7 +67,7 @@ const ContactUs = ({ id = "" }) => {
                     <label htmlFor="name" className="cu-form-label" >Name</label>
                     <div className="cu-input-wrapper">
                         <Icon icon="iconamoon:profile" width={30} height={30} />
-                        <input type="text" id='name' name="user_name" value={form.name} onChange={handleFormInput} className="cu-input" placeholder="Enter Your Name" />
+                        <input type="text" id='name' name="first_name" value={form.name} onChange={handleFormInput} className="cu-input" placeholder="Enter Your Name" />
                     </div>
                     <label htmlFor="e-mail" className="cu-form-label">E-mail</label>
                     <div className="cu-input-wrapper">
@@ -62,9 +78,11 @@ const ContactUs = ({ id = "" }) => {
                         <label htmlFor="message" className="cu-form-label">Message</label>
                         <textarea type="text" id='message' name="message" value={form.message} onChange={handleFormInput} className="cu-input2" placeholder="Write Your Message" />
              
-                    <button type="submit" value="Send" className="cu-form-button">
+                    <button type="submit" value="Send" className="cu-form-button" >
                         <p>Send Message</p>
-                        <Icon icon="iconamoon:arrow-right-1" className="cu-form-button-icon" color="#ffffff" />
+                        {
+                            isContactMessageSending ? <CircularProgress size={20} color="#ffffff"  /> : <Icon icon="iconamoon:arrow-right-1" className="cu-form-button-icon" color="#ffffff" />
+                        }
                     </button>
                 </form>
             </div>
